@@ -1,0 +1,151 @@
+name: flutter_one
+description: A new Flutter application.
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.1.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^0.1.2
+  carousel_slider: ^1.3.1
+  audioplayers: ^0.13.5
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/background.png
+    - assets/fruits.png
+    - assets/music.png
+    - assets/waterme.png
+    - assets/abc.png
+    - assets/home.png
+    - assets/task.png
+    - assets/speaker.png
+    - assets/background-anima.png
+    - assets/background-another.png
+    - assets/background_abc.png
+    - assets/app-background.png
+    - assets/top-background.png
+    - assets/orange.png
+    - assets/number.png
+    - assets/cow.png
+    - assets/clothes.png
+    - assets/vehicle.png
+    - assets/zebra.png
+    - assets/arrow1.png
+    - assets/arrow2.png
+    - assets/apple.png
+    - assets/background-main.png
+    - assets/alphabet/fruits1.png
+    - assets/alphabet/fruits2.png
+    - assets/alphabet/fruits3.png
+    - assets/alphabet/fruits4.png
+    - assets/alphabet/fruits5.png
+    - assets/alphabet/fruits6.png
+    - assets/alphabet/fruits7.png
+    - assets/alphabet/fruits9.png
+    - assets/alphabet/fruits9.png
+    - assets/alphabet/fruits17.png
+    - assets/alphabet/yacht.png
+    - assets/alphabet/xylophone.png
+    - assets/alphabet/umbrella.png
+    - assets/alphabet/violin.png
+    - assets/alphabet/sun.png
+    - assets/alphabet/queen.png
+    - assets/alphabet/robot.png
+    - assets/alphabet/nut.png
+    - assets/alphabet/guitar.png
+    - assets/alphabet/ice.png
+    - assets/alphabet/jug.png
+    - assets/animals/animal1.png
+    - assets/animals/animal2.png
+    - assets/animals/animal3.png
+    - assets/animals/animal4.png
+    - assets/animals/animal5.png
+    - assets/animals/animal6.png
+    - assets/animals/animal7.png
+    - assets/animals/animal8.png
+    - assets/animals/animal9.png
+    - assets/animals/animal10.png
+    - assets/animals/animal11.png
+    - assets/animals/animal12.png
+    - assets/animals/animal13.png
+    - assets/animals/animal14.png
+    - assets/animals/animal15.png
+    - assets/animals/animal16.png
+    - assets/animals/animal17.png
+    - assets/animals/animal28.png
+    - assets/animals/animal30.png
+    - assets/animals/whale.png
+    - assets/animals/octopus.png
+    - assets/animals/kangaroo.png
+    - assets/new-animal/bear.png
+    - assets/new-animal/cat.png
+    - assets/new-animal/donkey.png
+    - assets/new-animal/elephant.png
+    - assets/new-animal/giraffe.png
+    - assets/new-animal/lion.png
+    - assets/new-animal/monkey.png
+    - assets/new-animal/panda-bear.png
+    - assets/song/bus-background.png
+    - assets/song/sing-background.png
+    - assets/audio/sample.mp3
+    - assets/new-animal/snake.png
+
+
+        # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware.
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  fonts:
+     - family: Mansalva
+       fonts:
+         - asset: fonts/Mansalva-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+     - family: Comic
+       fonts:
+         - asset: fonts/Comic-Regular.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
