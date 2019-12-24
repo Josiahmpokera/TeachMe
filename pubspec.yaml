@@ -119,10 +119,23 @@ flutter:
     - assets/new-animal/lion.png
     - assets/new-animal/monkey.png
     - assets/new-animal/panda-bear.png
-    - assets/song/bus-background.png
-    - assets/song/sing-background.png
-    - assets/audio/sample.mp3
+    - assets/new-animal/fruit.png
+    - assets/song/mack.jpg
+    - assets/song/animals.jpg
+    - assets/song/john.jpg
+    - assets/sample.mp3
+    - assets/click.mp3
     - assets/new-animal/snake.png
+    - assets/fruits/fruits1.png
+    - assets/fruits/fruits2.png
+    - assets/fruits/fruits3.png
+    - assets/fruits/fruits4.png
+    - assets/fruits/fruits5.png
+    - assets/fruits/fruits6.png
+    - assets/fruits/fruits7.png
+    - assets/fruits/fruits8.png
+    - assets/fruits/fruits9.png
+    - assets/fruits/fruits10.png
 
 
         # An image asset can refer to one or more resolution-specific "variants", see

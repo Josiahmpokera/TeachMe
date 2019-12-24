@@ -21,24 +21,36 @@ AudioPlayer audioPlayer = AudioPlayer(mode: PlayerMode.LOW_LATENCY);
 
 class _HomeState extends State<Home> {
 
+  AudioPlayer advancePlayer;
+  AudioCache audioCache;
   //initiate the Playing
-  play() async {
-    int result = await audioPlayer.play('https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3');
-    if (result == 1) {
-      // success
-      print("The Audio Success");
-    }
-    else {
-      print("It fails");
-    }
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    initPlayer();
   }
+
+  void initPlayer(){
+    advancePlayer = AudioPlayer();
+    audioCache  = AudioCache(fixedPlayer: advancePlayer);
+
+
+    advancePlayer.durationHandler = (d) => setState((){
+
+    });
+  }
+
+  String localFilePath;
+
 
   @override
   Widget build(BuildContext context) {
     //final player = AudioCache();
-    AudioCache player = AudioCache(prefix: 'audio/');
-    player.play('assets/audio/sample.mp3');
-    player.load('sample.mp3');
+   // AudioCache player = AudioCache(prefix: 'audio/');
+    //player.play('assets/audio/sample.mp3');
+    //player.load('sample.mp3');
 
     return Container(
       decoration: BoxDecoration(
@@ -52,7 +64,7 @@ class _HomeState extends State<Home> {
         children: <Widget>[
           GestureDetector(
             onTap: (){
-              play();
+             audioCache.play('click.mp3');
               Navigator.push(context, MaterialPageRoute(builder: (context)=> NumberLearning()));
             },
             child: Padding(
@@ -91,6 +103,7 @@ class _HomeState extends State<Home> {
           ),
           GestureDetector(
             onTap: (){
+              audioCache.play('click.mp3');
               Navigator.push(context, MaterialPageRoute(builder: (context) => AlphabetLayout()));
             },
             child: Padding(
@@ -129,6 +142,7 @@ class _HomeState extends State<Home> {
           ),
           GestureDetector(
             onTap: (){
+              audioCache.play('click.mp3');
               Navigator.push(context, MaterialPageRoute(builder: (context) => AnimalLayout()),);
             },
             child: Padding(
@@ -167,6 +181,7 @@ class _HomeState extends State<Home> {
           ),
           GestureDetector(
             onTap: (){
+              audioCache.play('click.mp3');
               Navigator.push(context, MaterialPageRoute(builder: (context) => ClotheLayout()));
             },
             child: Padding(
@@ -205,6 +220,7 @@ class _HomeState extends State<Home> {
           ),
           GestureDetector(
             onTap: (){
+              //audioCache.play('click.mp3');
               Navigator.push(context, MaterialPageRoute(builder: (context) => VehicleLayout()));
             },
             child: Padding(
@@ -243,6 +259,7 @@ class _HomeState extends State<Home> {
           ),
           GestureDetector(
             onTap: (){
+              audioCache.play('click.mp3');
               Navigator.push(context, MaterialPageRoute(builder: (context)=> FruitsLayout()),);
             },
             child: Padding(

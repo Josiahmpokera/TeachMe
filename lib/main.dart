@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:audioplayers/audioplayers.dart';
+import 'package:audioplayers/audio_cache.dart';
 import 'home.dart';
 import 'task.dart';
 import 'song.dart';
@@ -10,7 +12,27 @@ class MyApp extends StatefulWidget {
   _MyAppState createState() => _MyAppState();
 }
 
+AudioPlayer audioPlayer = AudioPlayer(mode: PlayerMode.LOW_LATENCY);
+
 class _MyAppState extends State<MyApp> {
+
+  AudioPlayer advancePlayer;
+  AudioCache audioCache;
+
+  @override
+  void initState(){
+    super.initState();
+    initPlayer();
+  }
+
+
+  void initPlayer(){
+    advancePlayer = AudioPlayer();
+    audioCache = AudioCache(fixedPlayer: advancePlayer);
+    audioCache.loop('sample.mp3');
+  }
+
+  String localFilePath;
 
   int currentPage = 0;
 

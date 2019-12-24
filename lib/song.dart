@@ -51,7 +51,7 @@ class _SongLayoutState extends State<SongLayout> {
                             borderRadius: BorderRadius.circular(10.0),
                             color: Colors.greenAccent,
                             image: DecorationImage(
-                              image: AssetImage('assets/song/sing-background.png'),
+                              image: AssetImage('assets/song/mack.jpg'),
                               fit: BoxFit.cover,
                             ),
                               boxShadow: [
@@ -77,7 +77,7 @@ class _SongLayoutState extends State<SongLayout> {
                               borderRadius: BorderRadius.circular(10.0),
                               color: Colors.yellow,
                             image: DecorationImage(
-                              image: AssetImage('assets/song/bus-background.png'),
+                              image: AssetImage('assets/song/animals.jpg'),
                               fit: BoxFit.cover,
                             ),
                             boxShadow: [
@@ -115,7 +115,7 @@ class _SongLayoutState extends State<SongLayout> {
                             borderRadius: BorderRadius.circular(10.0),
                             color: Colors.greenAccent,
                             image: DecorationImage(
-                              image: AssetImage('assets/song/bus-background.png'),
+                              image: AssetImage('assets/song/john.jpg'),
                               fit: BoxFit.cover,
                             ),
                             boxShadow: [
@@ -141,7 +141,7 @@ class _SongLayoutState extends State<SongLayout> {
                             borderRadius: BorderRadius.circular(10.0),
                             color: Colors.yellow,
                             image: DecorationImage(
-                              image: AssetImage('assets/song/sing-background.png'),
+                              image: AssetImage('assets/song/animals.jpg'),
                               fit: BoxFit.cover,
                             ),
                             boxShadow: [
@@ -170,128 +170,7 @@ class _SongLayoutState extends State<SongLayout> {
             height: 01.0,
           ),
           SizedBox(height: 05.0,),
-          Row(
-            children: <Widget>[
-              Padding(
-                padding: EdgeInsets.symmetric(horizontal: 10.0),
-                child: Text("Online Song", style: TextStyle(color: Colors.white,fontFamily: 'Comic', fontWeight: FontWeight.w600, fontSize: 18.0),),
-              ),
-            ],
-          ),
-          Padding(
-            padding: EdgeInsets.symmetric(vertical: 10.0),
-            child: Container(
-              margin: EdgeInsets.symmetric(horizontal: 10.0),
-              width: double.infinity,
-              height: 45.0,
-              color: Colors.white30,
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: <Widget>[
-                  Padding(
-                    padding: EdgeInsets.only(left: 10.0),
-                    child: Text("Joy to the World", style: TextStyle(fontFamily: 'Comic', fontSize: 16.0, color: Colors.black45),),
-                  ),
-                  IconButton(icon: Icon(Icons.cloud_download, color: Colors.greenAccent,),)
-                ],
-              ),
-            ),
-          ),
-          Padding(
-            padding: EdgeInsets.symmetric(vertical: 10.0),
-            child: Container(
-              margin: EdgeInsets.symmetric(horizontal: 10.0),
-              width: double.infinity,
-              height: 45.0,
-              color: Colors.white30,
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: <Widget>[
-                  Padding(
-                    padding: EdgeInsets.only(left: 10.0),
-                    child: Text("Joy to the World", style: TextStyle(fontFamily: 'Comic', fontSize: 16.0, color: Colors.black45),),
-                  ),
-                  IconButton(icon: Icon(Icons.cloud_download, color: Colors.greenAccent,),)
-                ],
-              ),
-            ),
-          ),
-          Padding(
-            padding: EdgeInsets.symmetric(vertical: 10.0),
-            child: Container(
-              margin: EdgeInsets.symmetric(horizontal: 10.0),
-              width: double.infinity,
-              height: 45.0,
-              color: Colors.white30,
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: <Widget>[
-                  Padding(
-                    padding: EdgeInsets.only(left: 10.0),
-                    child: Text("Joy to the World", style: TextStyle(fontFamily: 'Comic', fontSize: 16.0, color: Colors.black45),),
-                  ),
-                  IconButton(icon: Icon(Icons.cloud_download, color: Colors.greenAccent,),)
-                ],
-              ),
-            ),
-          ),
-          Padding(
-            padding: EdgeInsets.symmetric(vertical: 10.0),
-            child: Container(
-              margin: EdgeInsets.symmetric(horizontal: 10.0),
-              width: double.infinity,
-              height: 45.0,
-              color: Colors.white30,
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: <Widget>[
-                  Padding(
-                    padding: EdgeInsets.only(left: 10.0),
-                    child: Text("Joy to the World", style: TextStyle(fontFamily: 'Comic', fontSize: 16.0, color: Colors.black45),),
-                  ),
-                  IconButton(icon: Icon(Icons.cloud_download, color: Colors.greenAccent,),)
-                ],
-              ),
-            ),
-          ),
-          Padding(
-            padding: EdgeInsets.symmetric(vertical: 10.0),
-            child: Container(
-              margin: EdgeInsets.symmetric(horizontal: 10.0),
-              width: double.infinity,
-              height: 45.0,
-              color: Colors.white30,
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: <Widget>[
-                  Padding(
-                    padding: EdgeInsets.only(left: 10.0),
-                    child: Text("Joy to the World", style: TextStyle(fontFamily: 'Comic', fontSize: 16.0, color: Colors.black45),),
-                  ),
-                  IconButton(icon: Icon(Icons.cloud_download, color: Colors.greenAccent,),)
-                ],
-              ),
-            ),
-          ),
-          Padding(
-            padding: EdgeInsets.symmetric(vertical: 10.0),
-            child: Container(
-              margin: EdgeInsets.symmetric(horizontal: 10.0),
-              width: double.infinity,
-              height: 45.0,
-              color: Colors.white30,
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: <Widget>[
-                  Padding(
-                    padding: EdgeInsets.only(left: 10.0),
-                    child: Text("Joy to the World", style: TextStyle(fontFamily: 'Comic', fontSize: 16.0, color: Colors.black45),),
-                  ),
-                  IconButton(icon: Icon(Icons.cloud_download, color: Colors.greenAccent,),)
-                ],
-              ),
-            ),
-          ),
+
         ],
       ),
     );
