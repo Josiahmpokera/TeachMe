@@ -1,6 +1,6 @@
-# flutter_one
+# Flutter One
 
-A new Flutter application.
+==TeachMe Application.==
 
 ## Getting Started
 
@@ -22,3 +22,5 @@ samples, guidance on mobile development, and a full API reference.
  - Keeps the Real Animal for Kids to Understands everything
  - Create Kids Interface Friendly.
  - Allows Voice in Every Object Kids want to Learning.
+
+ > Get the THings Done
