@@ -125,6 +125,32 @@ flutter:
     - assets/song/john.jpg
     - assets/sample.mp3
     - assets/click.mp3
+    - assets/new.mp3
+    - assets/a.mp3
+    - assets/b.mp3
+    - assets/c.mp3
+    - assets/d.mp3
+    - assets/e.mp3
+    - assets/f.mp3
+    - assets/g.mp3
+    - assets/h.mp3
+    - assets/i.mp3
+    - assets/j.mp3
+    - assets/k.mp3
+    - assets/l.mp3
+    - assets/m.mp3
+    - assets/n.mp3
+    - assets/o.mp3
+    - assets/p.mp3
+    - assets/q.mp3
+    - assets/r.mp3
+    - assets/s.mp3
+    - assets/t.mp3
+    - assets/u.mp3
+    - assets/v.mp3
+    - assets/w.mp3
+    - assets/x.mp3
+    - assets/y.mp3
     - assets/new-animal/snake.png
     - assets/fruits/fruits1.png
     - assets/fruits/fruits2.png
@@ -136,6 +162,7 @@ flutter:
     - assets/fruits/fruits8.png
     - assets/fruits/fruits9.png
     - assets/fruits/fruits10.png
+    - assets/music/hand.png
 
 
         # An image asset can refer to one or more resolution-specific "variants", see

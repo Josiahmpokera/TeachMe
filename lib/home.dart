@@ -220,7 +220,7 @@ class _HomeState extends State<Home> {
           ),
           GestureDetector(
             onTap: (){
-              //audioCache.play('click.mp3');
+              audioCache.play('click.mp3');
               Navigator.push(context, MaterialPageRoute(builder: (context) => VehicleLayout()));
             },
             child: Padding(

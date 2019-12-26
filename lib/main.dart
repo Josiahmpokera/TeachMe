@@ -29,7 +29,7 @@ class _MyAppState extends State<MyApp> {
   void initPlayer(){
     advancePlayer = AudioPlayer();
     audioCache = AudioCache(fixedPlayer: advancePlayer);
-    audioCache.loop('sample.mp3');
+    audioCache.loop('new.mp3');
   }
 
   String localFilePath;
