@@ -4,6 +4,7 @@ import 'package:audioplayers/audio_cache.dart';
 import 'home.dart';
 import 'task.dart';
 import 'song.dart';
+import 'manu.dart';
 
 void main() => runApp(MyApp());
 
@@ -14,6 +15,7 @@ class MyApp extends StatefulWidget {
 
 AudioPlayer audioPlayer = AudioPlayer(mode: PlayerMode.LOW_LATENCY);
 
+
 class _MyAppState extends State<MyApp> {
 
   AudioPlayer advancePlayer;
@@ -22,7 +24,7 @@ class _MyAppState extends State<MyApp> {
   @override
   void initState(){
     super.initState();
-    initPlayer();
+    //initPlayer();
   }
 
 
@@ -42,8 +44,12 @@ class _MyAppState extends State<MyApp> {
     SongLayout(),
   ];
 
+
+
   @override
   Widget build(BuildContext context) {
+
+
 
     return MaterialApp(
       debugShowCheckedModeBanner: false,
@@ -54,9 +60,21 @@ class _MyAppState extends State<MyApp> {
           title: Text("TeachMe", style: TextStyle(fontFamily: 'Comic'),),
           centerTitle: true,
           actions: <Widget>[
-            IconButton(icon: Icon(Icons.more_vert, color: Colors.white,),)
-          ],
+              PopupMenuButton<String>(
+                onSelected: choiceAction,
+                itemBuilder: (BuildContext context){
+                  return manu.choices.map((String choice){
+                    return PopupMenuItem<String>(
+                      value: choice,
+                      child: Text(choice, style: TextStyle(fontFamily: 'Comic', color: Colors.brown, fontWeight: FontWeight.w600),),
+                    );
+                  }).toList();
+                },
+              )
+            ],
+
         ),
+        
         body: options[currentPage],
         bottomNavigationBar: BottomNavigationBar(
           backgroundColor: Colors.yellow,
@@ -78,5 +96,17 @@ class _MyAppState extends State<MyApp> {
         ),
     ),
     );
+  }
+
+  void choiceAction(String choice){
+    if(choice == manu.Setting){
+      print('Setting');
+    }
+    if(choice == manu.About){
+      print('About Page');
+    }
+    if(choice == manu.Subscribe){
+      print('Subscribe');
+    }
   }
 }

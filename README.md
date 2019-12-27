@@ -1,6 +1,6 @@
 # Flutter One
 
-==TeachMe Application.==
+==TeachMe Application==
 
 ## Getting Started
 
@@ -23,4 +23,6 @@ samples, guidance on mobile development, and a full API reference.
  - Create Kids Interface Friendly.
  - Allows Voice in Every Object Kids want to Learning.
 
- > Get the THings Done
+**Get Started**
+ > $ flutter doctor
+ > $ flutter run

@@ -311,7 +311,7 @@ class _AlphabetLayoutState extends State<AlphabetLayout> {
                         children: <Widget>[
                           GestureDetector(
                             onTap: (){
-                              audioCache.play('z.mp3');
+                              audioCache.play('d.mp3');
                             },
                             child: Container(
                               height: 200.0,
@@ -336,7 +336,7 @@ class _AlphabetLayoutState extends State<AlphabetLayout> {
                                       Row(
                                         mainAxisAlignment: MainAxisAlignment.center,
                                         children: <Widget>[
-                                          Text("Z", style: TextStyle(color: Colors.brown,fontSize: 120.0, fontFamily: 'Comic', fontWeight: FontWeight.bold),),
+                                          Text("D", style: TextStyle(color: Colors.brown,fontSize: 120.0, fontFamily: 'Comic', fontWeight: FontWeight.bold),),
                                         ],
                                       ),
                                     ],
@@ -345,11 +345,11 @@ class _AlphabetLayoutState extends State<AlphabetLayout> {
                               ),
                             ),
                           ),
-                          Text("Z for Zebra", style: TextStyle(fontSize: 15.0, fontFamily: 'Comic', fontWeight: FontWeight.bold),),
+                          Text("D for Donkey", style: TextStyle(fontSize: 15.0, fontFamily: 'Comic', fontWeight: FontWeight.bold),),
                           Container(
                             width: 80.0,
                             height: 80.0,
-                            child: Image.asset('assets/zebra.png'),
+                            child: Image.asset('assets/animals/animal6.png'),
                           ),
                         ],
                       ),
@@ -377,7 +377,7 @@ class _AlphabetLayoutState extends State<AlphabetLayout> {
                         children: <Widget>[
                           GestureDetector(
                             onTap: (){
-                              audioCache.play('z.mp3');
+                              audioCache.play('e.mp3');
                             },
                             child: Container(
                               height: 200.0,
@@ -402,7 +402,7 @@ class _AlphabetLayoutState extends State<AlphabetLayout> {
                                       Row(
                                         mainAxisAlignment: MainAxisAlignment.center,
                                         children: <Widget>[
-                                          Text("Z", style: TextStyle(color: Colors.brown,fontSize: 120.0, fontFamily: 'Comic', fontWeight: FontWeight.bold),),
+                                          Text("E", style: TextStyle(color: Colors.brown,fontSize: 120.0, fontFamily: 'Comic', fontWeight: FontWeight.bold),),
                                         ],
                                       ),
                                     ],
@@ -411,11 +411,11 @@ class _AlphabetLayoutState extends State<AlphabetLayout> {
                               ),
                             ),
                           ),
-                          Text("Z for Zebra", style: TextStyle(fontSize: 15.0, fontFamily: 'Comic', fontWeight: FontWeight.bold),),
+                          Text("E for Elephant", style: TextStyle(fontSize: 15.0, fontFamily: 'Comic', fontWeight: FontWeight.bold),),
                           Container(
                             width: 80.0,
                             height: 80.0,
-                            child: Image.asset('assets/zebra.png'),
+                            child: Image.asset('assets/animals/animal8.png'),
                           ),
                         ],
                       ),
@@ -443,7 +443,7 @@ class _AlphabetLayoutState extends State<AlphabetLayout> {
                         children: <Widget>[
                           GestureDetector(
                             onTap: (){
-                              audioCache.play('z.mp3');
+                              audioCache.play('f.mp3');
                             },
                             child: Container(
                               height: 200.0,
@@ -468,7 +468,7 @@ class _AlphabetLayoutState extends State<AlphabetLayout> {
                                       Row(
                                         mainAxisAlignment: MainAxisAlignment.center,
                                         children: <Widget>[
-                                          Text("Z", style: TextStyle(color: Colors.brown,fontSize: 120.0, fontFamily: 'Comic', fontWeight: FontWeight.bold),),
+                                          Text("F", style: TextStyle(color: Colors.brown,fontSize: 120.0, fontFamily: 'Comic', fontWeight: FontWeight.bold),),
                                         ],
                                       ),
                                     ],
@@ -477,11 +477,11 @@ class _AlphabetLayoutState extends State<AlphabetLayout> {
                               ),
                             ),
                           ),
-                          Text("Z for Zebra", style: TextStyle(fontSize: 15.0, fontFamily: 'Comic', fontWeight: FontWeight.bold),),
+                          Text("F for Fish", style: TextStyle(fontSize: 15.0, fontFamily: 'Comic', fontWeight: FontWeight.bold),),
                           Container(
                             width: 80.0,
                             height: 80.0,
-                            child: Image.asset('assets/zebra.png'),
+                            child: Image.asset('assets/animals/animal30.png'),
                           ),
                         ],
                       ),
@@ -509,7 +509,7 @@ class _AlphabetLayoutState extends State<AlphabetLayout> {
                         children: <Widget>[
                           GestureDetector(
                             onTap: (){
-                              audioCache.play('z.mp3');
+                              audioCache.play('g.mp3');
                             },
                             child: Container(
                               height: 200.0,
@@ -534,7 +534,7 @@ class _AlphabetLayoutState extends State<AlphabetLayout> {
                                       Row(
                                         mainAxisAlignment: MainAxisAlignment.center,
                                         children: <Widget>[
-                                          Text("Z", style: TextStyle(color: Colors.brown,fontSize: 120.0, fontFamily: 'Comic', fontWeight: FontWeight.bold),),
+                                          Text("G", style: TextStyle(color: Colors.brown,fontSize: 120.0, fontFamily: 'Comic', fontWeight: FontWeight.bold),),
                                         ],
                                       ),
                                     ],
@@ -543,11 +543,11 @@ class _AlphabetLayoutState extends State<AlphabetLayout> {
                               ),
                             ),
                           ),
-                          Text("Z for Zebra", style: TextStyle(fontSize: 15.0, fontFamily: 'Comic', fontWeight: FontWeight.bold),),
+                          Text("G for Guitar", style: TextStyle(fontSize: 15.0, fontFamily: 'Comic', fontWeight: FontWeight.bold),),
                           Container(
                             width: 80.0,
                             height: 80.0,
-                            child: Image.asset('assets/zebra.png'),
+                            child: Image.asset('assets/alphabet/guitar.png'),
                           ),
                         ],
                       ),
@@ -575,7 +575,7 @@ class _AlphabetLayoutState extends State<AlphabetLayout> {
                         children: <Widget>[
                           GestureDetector(
                             onTap: (){
-                              audioCache.play('z.mp3');
+                              audioCache.play('h.mp3');
                             },
                             child: Container(
                               height: 200.0,
@@ -600,7 +600,7 @@ class _AlphabetLayoutState extends State<AlphabetLayout> {
                                       Row(
                                         mainAxisAlignment: MainAxisAlignment.center,
                                         children: <Widget>[
-                                          Text("Z", style: TextStyle(color: Colors.brown,fontSize: 120.0, fontFamily: 'Comic', fontWeight: FontWeight.bold),),
+                                          Text("H", style: TextStyle(color: Colors.brown,fontSize: 120.0, fontFamily: 'Comic', fontWeight: FontWeight.bold),),
                                         ],
                                       ),
                                     ],
@@ -609,11 +609,11 @@ class _AlphabetLayoutState extends State<AlphabetLayout> {
                               ),
                             ),
                           ),
-                          Text("Z for Zebra", style: TextStyle(fontSize: 15.0, fontFamily: 'Comic', fontWeight: FontWeight.bold),),
+                          Text("H for Hen", style: TextStyle(fontSize: 15.0, fontFamily: 'Comic', fontWeight: FontWeight.bold),),
                           Container(
                             width: 80.0,
                             height: 80.0,
-                            child: Image.asset('assets/zebra.png'),
+                            child: Image.asset('assets/animals/animal3.png'),
                           ),
                         ],
                       ),
@@ -641,7 +641,7 @@ class _AlphabetLayoutState extends State<AlphabetLayout> {
                         children: <Widget>[
                           GestureDetector(
                             onTap: (){
-                              audioCache.play('z.mp3');
+                              audioCache.play('i.mp3');
                             },
                             child: Container(
                               height: 200.0,
@@ -666,7 +666,7 @@ class _AlphabetLayoutState extends State<AlphabetLayout> {
                                       Row(
                                         mainAxisAlignment: MainAxisAlignment.center,
                                         children: <Widget>[
-                                          Text("Z", style: TextStyle(color: Colors.brown,fontSize: 120.0, fontFamily: 'Comic', fontWeight: FontWeight.bold),),
+                                          Text("I", style: TextStyle(color: Colors.brown,fontSize: 120.0, fontFamily: 'Comic', fontWeight: FontWeight.bold),),
                                         ],
                                       ),
                                     ],
@@ -675,11 +675,11 @@ class _AlphabetLayoutState extends State<AlphabetLayout> {
                               ),
                             ),
                           ),
-                          Text("Z for Zebra", style: TextStyle(fontSize: 15.0, fontFamily: 'Comic', fontWeight: FontWeight.bold),),
+                          Text("I for Ice", style: TextStyle(fontSize: 15.0, fontFamily: 'Comic', fontWeight: FontWeight.bold),),
                           Container(
                             width: 80.0,
                             height: 80.0,
-                            child: Image.asset('assets/zebra.png'),
+                            child: Image.asset('assets/alphabet/ice.png'),
                           ),
                         ],
                       ),
@@ -707,7 +707,7 @@ class _AlphabetLayoutState extends State<AlphabetLayout> {
                         children: <Widget>[
                           GestureDetector(
                             onTap: (){
-                              audioCache.play('z.mp3');
+                              audioCache.play('j.mp3');
                             },
                             child: Container(
                               height: 200.0,
@@ -732,7 +732,7 @@ class _AlphabetLayoutState extends State<AlphabetLayout> {
                                       Row(
                                         mainAxisAlignment: MainAxisAlignment.center,
                                         children: <Widget>[
-                                          Text("Z", style: TextStyle(color: Colors.brown,fontSize: 120.0, fontFamily: 'Comic', fontWeight: FontWeight.bold),),
+                                          Text("J", style: TextStyle(color: Colors.brown,fontSize: 120.0, fontFamily: 'Comic', fontWeight: FontWeight.bold),),
                                         ],
                                       ),
                                     ],
@@ -741,11 +741,11 @@ class _AlphabetLayoutState extends State<AlphabetLayout> {
                               ),
                             ),
                           ),
-                          Text("Z for Zebra", style: TextStyle(fontSize: 15.0, fontFamily: 'Comic', fontWeight: FontWeight.bold),),
+                          Text("J for Jug", style: TextStyle(fontSize: 15.0, fontFamily: 'Comic', fontWeight: FontWeight.bold),),
                           Container(
                             width: 80.0,
                             height: 80.0,
-                            child: Image.asset('assets/zebra.png'),
+                            child: Image.asset('assets/alphabet/jug.png'),
                           ),
                         ],
                       ),
@@ -773,7 +773,7 @@ class _AlphabetLayoutState extends State<AlphabetLayout> {
                         children: <Widget>[
                           GestureDetector(
                             onTap: (){
-                              audioCache.play('z.mp3');
+                              audioCache.play('k.mp3');
                             },
                             child: Container(
                               height: 200.0,
@@ -798,7 +798,7 @@ class _AlphabetLayoutState extends State<AlphabetLayout> {
                                       Row(
                                         mainAxisAlignment: MainAxisAlignment.center,
                                         children: <Widget>[
-                                          Text("Z", style: TextStyle(color: Colors.brown,fontSize: 120.0, fontFamily: 'Comic', fontWeight: FontWeight.bold),),
+                                          Text("K", style: TextStyle(color: Colors.brown,fontSize: 120.0, fontFamily: 'Comic', fontWeight: FontWeight.bold),),
                                         ],
                                       ),
                                     ],
@@ -807,11 +807,11 @@ class _AlphabetLayoutState extends State<AlphabetLayout> {
                               ),
                             ),
                           ),
-                          Text("Z for Zebra", style: TextStyle(fontSize: 15.0, fontFamily: 'Comic', fontWeight: FontWeight.bold),),
+                          Text("K for kangaroo", style: TextStyle(fontSize: 15.0, fontFamily: 'Comic', fontWeight: FontWeight.bold),),
                           Container(
                             width: 80.0,
                             height: 80.0,
-                            child: Image.asset('assets/zebra.png'),
+                            child: Image.asset('assets/animals/kangaroo.png'),
                           ),
                         ],
                       ),
@@ -839,7 +839,7 @@ class _AlphabetLayoutState extends State<AlphabetLayout> {
                         children: <Widget>[
                           GestureDetector(
                             onTap: (){
-                              audioCache.play('z.mp3');
+                              audioCache.play('l.mp3');
                             },
                             child: Container(
                               height: 200.0,
@@ -864,7 +864,7 @@ class _AlphabetLayoutState extends State<AlphabetLayout> {
                                       Row(
                                         mainAxisAlignment: MainAxisAlignment.center,
                                         children: <Widget>[
-                                          Text("Z", style: TextStyle(color: Colors.brown,fontSize: 120.0, fontFamily: 'Comic', fontWeight: FontWeight.bold),),
+                                          Text("L", style: TextStyle(color: Colors.brown,fontSize: 120.0, fontFamily: 'Comic', fontWeight: FontWeight.bold),),
                                         ],
                                       ),
                                     ],
@@ -873,11 +873,11 @@ class _AlphabetLayoutState extends State<AlphabetLayout> {
                               ),
                             ),
                           ),
-                          Text("Z for Zebra", style: TextStyle(fontSize: 15.0, fontFamily: 'Comic', fontWeight: FontWeight.bold),),
+                          Text("L for Lion", style: TextStyle(fontSize: 15.0, fontFamily: 'Comic', fontWeight: FontWeight.bold),),
                           Container(
                             width: 80.0,
                             height: 80.0,
-                            child: Image.asset('assets/zebra.png'),
+                            child: Image.asset('assets/animals/animal17.png'),
                           ),
                         ],
                       ),
@@ -905,7 +905,7 @@ class _AlphabetLayoutState extends State<AlphabetLayout> {
                         children: <Widget>[
                           GestureDetector(
                             onTap: (){
-                              audioCache.play('z.mp3');
+                              audioCache.play('m.mp3');
                             },
                             child: Container(
                               height: 200.0,
@@ -930,7 +930,7 @@ class _AlphabetLayoutState extends State<AlphabetLayout> {
                                       Row(
                                         mainAxisAlignment: MainAxisAlignment.center,
                                         children: <Widget>[
-                                          Text("Z", style: TextStyle(color: Colors.brown,fontSize: 120.0, fontFamily: 'Comic', fontWeight: FontWeight.bold),),
+                                          Text("M", style: TextStyle(color: Colors.brown,fontSize: 120.0, fontFamily: 'Comic', fontWeight: FontWeight.bold),),
                                         ],
                                       ),
                                     ],
@@ -939,11 +939,11 @@ class _AlphabetLayoutState extends State<AlphabetLayout> {
                               ),
                             ),
                           ),
-                          Text("Z for Zebra", style: TextStyle(fontSize: 15.0, fontFamily: 'Comic', fontWeight: FontWeight.bold),),
+                          Text("M for Monkey", style: TextStyle(fontSize: 15.0, fontFamily: 'Comic', fontWeight: FontWeight.bold),),
                           Container(
                             width: 80.0,
                             height: 80.0,
-                            child: Image.asset('assets/zebra.png'),
+                            child: Image.asset('assets/animals/animal28.png'),
                           ),
                         ],
                       ),
@@ -971,7 +971,7 @@ class _AlphabetLayoutState extends State<AlphabetLayout> {
                         children: <Widget>[
                           GestureDetector(
                             onTap: (){
-                              audioCache.play('z.mp3');
+                              audioCache.play('n.mp3');
                             },
                             child: Container(
                               height: 200.0,
@@ -996,7 +996,7 @@ class _AlphabetLayoutState extends State<AlphabetLayout> {
                                       Row(
                                         mainAxisAlignment: MainAxisAlignment.center,
                                         children: <Widget>[
-                                          Text("Z", style: TextStyle(color: Colors.brown,fontSize: 120.0, fontFamily: 'Comic', fontWeight: FontWeight.bold),),
+                                          Text("N", style: TextStyle(color: Colors.brown,fontSize: 120.0, fontFamily: 'Comic', fontWeight: FontWeight.bold),),
                                         ],
                                       ),
                                     ],
@@ -1005,11 +1005,11 @@ class _AlphabetLayoutState extends State<AlphabetLayout> {
                               ),
                             ),
                           ),
-                          Text("Z for Zebra", style: TextStyle(fontSize: 15.0, fontFamily: 'Comic', fontWeight: FontWeight.bold),),
+                          Text("N for Nut", style: TextStyle(fontSize: 15.0, fontFamily: 'Comic', fontWeight: FontWeight.bold),),
                           Container(
                             width: 80.0,
                             height: 80.0,
-                            child: Image.asset('assets/zebra.png'),
+                            child: Image.asset('assets/alphabet/nut.png'),
                           ),
                         ],
                       ),
@@ -1037,7 +1037,7 @@ class _AlphabetLayoutState extends State<AlphabetLayout> {
                         children: <Widget>[
                           GestureDetector(
                             onTap: (){
-                              audioCache.play('z.mp3');
+                              audioCache.play('o.mp3');
                             },
                             child: Container(
                               height: 200.0,
@@ -1062,7 +1062,7 @@ class _AlphabetLayoutState extends State<AlphabetLayout> {
                                       Row(
                                         mainAxisAlignment: MainAxisAlignment.center,
                                         children: <Widget>[
-                                          Text("Z", style: TextStyle(color: Colors.brown,fontSize: 120.0, fontFamily: 'Comic', fontWeight: FontWeight.bold),),
+                                          Text("O", style: TextStyle(color: Colors.brown,fontSize: 120.0, fontFamily: 'Comic', fontWeight: FontWeight.bold),),
                                         ],
                                       ),
                                     ],
@@ -1071,11 +1071,11 @@ class _AlphabetLayoutState extends State<AlphabetLayout> {
                               ),
                             ),
                           ),
-                          Text("Z for Zebra", style: TextStyle(fontSize: 15.0, fontFamily: 'Comic', fontWeight: FontWeight.bold),),
+                          Text("O for Octopus", style: TextStyle(fontSize: 15.0, fontFamily: 'Comic', fontWeight: FontWeight.bold),),
                           Container(
                             width: 80.0,
                             height: 80.0,
-                            child: Image.asset('assets/zebra.png'),
+                            child: Image.asset('assets/animals/octopus.png'),
                           ),
                         ],
                       ),
@@ -1103,7 +1103,7 @@ class _AlphabetLayoutState extends State<AlphabetLayout> {
                         children: <Widget>[
                           GestureDetector(
                             onTap: (){
-                              audioCache.play('z.mp3');
+                              audioCache.play('p.mp3');
                             },
                             child: Container(
                               height: 200.0,
@@ -1128,7 +1128,7 @@ class _AlphabetLayoutState extends State<AlphabetLayout> {
                                       Row(
                                         mainAxisAlignment: MainAxisAlignment.center,
                                         children: <Widget>[
-                                          Text("Z", style: TextStyle(color: Colors.brown,fontSize: 120.0, fontFamily: 'Comic', fontWeight: FontWeight.bold),),
+                                          Text("P", style: TextStyle(color: Colors.brown,fontSize: 120.0, fontFamily: 'Comic', fontWeight: FontWeight.bold),),
                                         ],
                                       ),
                                     ],
@@ -1137,11 +1137,11 @@ class _AlphabetLayoutState extends State<AlphabetLayout> {
                               ),
                             ),
                           ),
-                          Text("Z for Zebra", style: TextStyle(fontSize: 15.0, fontFamily: 'Comic', fontWeight: FontWeight.bold),),
+                          Text("P for Panda", style: TextStyle(fontSize: 15.0, fontFamily: 'Comic', fontWeight: FontWeight.bold),),
                           Container(
                             width: 80.0,
                             height: 80.0,
-                            child: Image.asset('assets/zebra.png'),
+                            child: Image.asset('assets/alphabet/panda.png'),
                           ),
                         ],
                       ),
@@ -1169,7 +1169,7 @@ class _AlphabetLayoutState extends State<AlphabetLayout> {
                         children: <Widget>[
                           GestureDetector(
                             onTap: (){
-                              audioCache.play('z.mp3');
+                              audioCache.play('q.mp3');
                             },
                             child: Container(
                               height: 200.0,
@@ -1194,7 +1194,7 @@ class _AlphabetLayoutState extends State<AlphabetLayout> {
                                       Row(
                                         mainAxisAlignment: MainAxisAlignment.center,
                                         children: <Widget>[
-                                          Text("Z", style: TextStyle(color: Colors.brown,fontSize: 120.0, fontFamily: 'Comic', fontWeight: FontWeight.bold),),
+                                          Text("Q", style: TextStyle(color: Colors.brown,fontSize: 120.0, fontFamily: 'Comic', fontWeight: FontWeight.bold),),
                                         ],
                                       ),
                                     ],
@@ -1203,11 +1203,11 @@ class _AlphabetLayoutState extends State<AlphabetLayout> {
                               ),
                             ),
                           ),
-                          Text("Z for Zebra", style: TextStyle(fontSize: 15.0, fontFamily: 'Comic', fontWeight: FontWeight.bold),),
+                          Text("Q for Queen", style: TextStyle(fontSize: 15.0, fontFamily: 'Comic', fontWeight: FontWeight.bold),),
                           Container(
                             width: 80.0,
                             height: 80.0,
-                            child: Image.asset('assets/zebra.png'),
+                            child: Image.asset('assets/alphabet/queen.png'),
                           ),
                         ],
                       ),
@@ -1235,7 +1235,7 @@ class _AlphabetLayoutState extends State<AlphabetLayout> {
                         children: <Widget>[
                           GestureDetector(
                             onTap: (){
-                              audioCache.play('z.mp3');
+                              audioCache.play('r.mp3');
                             },
                             child: Container(
                               height: 200.0,
@@ -1260,7 +1260,7 @@ class _AlphabetLayoutState extends State<AlphabetLayout> {
                                       Row(
                                         mainAxisAlignment: MainAxisAlignment.center,
                                         children: <Widget>[
-                                          Text("Z", style: TextStyle(color: Colors.brown,fontSize: 120.0, fontFamily: 'Comic', fontWeight: FontWeight.bold),),
+                                          Text("R", style: TextStyle(color: Colors.brown,fontSize: 120.0, fontFamily: 'Comic', fontWeight: FontWeight.bold),),
                                         ],
                                       ),
                                     ],
@@ -1269,11 +1269,11 @@ class _AlphabetLayoutState extends State<AlphabetLayout> {
                               ),
                             ),
                           ),
-                          Text("Z for Zebra", style: TextStyle(fontSize: 15.0, fontFamily: 'Comic', fontWeight: FontWeight.bold),),
+                          Text("R for Robot", style: TextStyle(fontSize: 15.0, fontFamily: 'Comic', fontWeight: FontWeight.bold),),
                           Container(
                             width: 80.0,
                             height: 80.0,
-                            child: Image.asset('assets/zebra.png'),
+                            child: Image.asset('assets/alphabet/robot.png'),
                           ),
                         ],
                       ),
@@ -1301,7 +1301,7 @@ class _AlphabetLayoutState extends State<AlphabetLayout> {
                     children: <Widget>[
                       GestureDetector(
                         onTap: (){
-                          audioCache.play('z.mp3');
+                          audioCache.play('s.mp3');
                         },
                         child: Container(
                           height: 200.0,
@@ -1326,7 +1326,7 @@ class _AlphabetLayoutState extends State<AlphabetLayout> {
                                   Row(
                                     mainAxisAlignment: MainAxisAlignment.center,
                                     children: <Widget>[
-                                      Text("Z", style: TextStyle(color: Colors.brown,fontSize: 120.0, fontFamily: 'Comic', fontWeight: FontWeight.bold),),
+                                      Text("S", style: TextStyle(color: Colors.brown,fontSize: 120.0, fontFamily: 'Comic', fontWeight: FontWeight.bold),),
                                     ],
                                   ),
                                 ],
@@ -1335,11 +1335,11 @@ class _AlphabetLayoutState extends State<AlphabetLayout> {
                           ),
                         ),
                       ),
-                      Text("Z for Zebra", style: TextStyle(fontSize: 15.0, fontFamily: 'Comic', fontWeight: FontWeight.bold),),
+                      Text("S for Sun", style: TextStyle(fontSize: 15.0, fontFamily: 'Comic', fontWeight: FontWeight.bold),),
                       Container(
                         width: 80.0,
                         height: 80.0,
-                        child: Image.asset('assets/zebra.png'),
+                        child: Image.asset('assets/alphabet/sun.png'),
                       ),
                     ],
                   ),
@@ -1367,7 +1367,7 @@ class _AlphabetLayoutState extends State<AlphabetLayout> {
                         children: <Widget>[
                           GestureDetector(
                             onTap: (){
-                              audioCache.play('z.mp3');
+                              audioCache.play('t.mp3');
                             },
                             child: Container(
                               height: 200.0,
@@ -1392,7 +1392,7 @@ class _AlphabetLayoutState extends State<AlphabetLayout> {
                                       Row(
                                         mainAxisAlignment: MainAxisAlignment.center,
                                         children: <Widget>[
-                                          Text("Z", style: TextStyle(color: Colors.brown,fontSize: 120.0, fontFamily: 'Comic', fontWeight: FontWeight.bold),),
+                                          Text("T", style: TextStyle(color: Colors.brown,fontSize: 120.0, fontFamily: 'Comic', fontWeight: FontWeight.bold),),
                                         ],
                                       ),
                                     ],
@@ -1401,11 +1401,11 @@ class _AlphabetLayoutState extends State<AlphabetLayout> {
                               ),
                             ),
                           ),
-                          Text("Z for Zebra", style: TextStyle(fontSize: 15.0, fontFamily: 'Comic', fontWeight: FontWeight.bold),),
+                          Text("T for Tomato", style: TextStyle(fontSize: 15.0, fontFamily: 'Comic', fontWeight: FontWeight.bold),),
                           Container(
                             width: 80.0,
                             height: 80.0,
-                            child: Image.asset('assets/zebra.png'),
+                            child: Image.asset('assets/fruits/fruits17.png'),
                           ),
                         ],
                       ),
@@ -1675,7 +1675,6 @@ class _AlphabetLayoutState extends State<AlphabetLayout> {
                       ),
                     ),
                   ),
-
                   Padding(
                     padding: EdgeInsets.all(10.0),
                     child: Container(
