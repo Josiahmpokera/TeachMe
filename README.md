@@ -8,6 +8,9 @@
 <img src="ScreenShot1.png" height="300em" /> <img src="ScreenShot2.png" height="300em" /> <img src="ScreenShot3.png" height="300em" />
 
 This project is a starting point for a Flutter application.
+## Created and Maintained by
+
+[Josiah Mpokera](https://github.com/Josiahmpokera) | [Instagram](https://www.instagram.com/josiah__yesayah/) | [Twitter](https://twitter.com/Josiah_dev)
 
 A few resources to get you started if this is your first Flutter project:
 
