@@ -1,8 +1,11 @@
 # Flutter One
 
-==TeachMe Application==
+**TeachMe Application**
 
-## Getting Started
+### Show some :heart: and star the repo to support the project
+
+## Screen Short
+<img src="ScreenShot1.png" height="300em" /> <img src="ScreenShot2.png" height="300em" /> <img src="ScreenShot3.png" height="300em" />
 
 This project is a starting point for a Flutter application.
 
@@ -25,4 +28,3 @@ samples, guidance on mobile development, and a full API reference.
 
 **Get Started**
  > $ flutter doctor
- > $ flutter run
