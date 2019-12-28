@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:audioplayers/audioplayers.dart';
 import 'package:audioplayers/audio_cache.dart';
+import 'package:flutter/services.dart';
 import 'home.dart';
 import 'task.dart';
 import 'song.dart';
@@ -15,24 +16,38 @@ class MyApp extends StatefulWidget {
 
 AudioPlayer audioPlayer = AudioPlayer(mode: PlayerMode.LOW_LATENCY);
 
+enum ConfirmAction {CANCEL , ACCEPT}
+
 
 class _MyAppState extends State<MyApp> {
 
+  Duration _duration = Duration();
+  Duration _position = Duration();
   AudioPlayer advancePlayer;
   AudioCache audioCache;
 
   @override
   void initState(){
     super.initState();
-    //initPlayer();
+    initPlayer();
   }
 
 
   void initPlayer(){
     advancePlayer = AudioPlayer();
     audioCache = AudioCache(fixedPlayer: advancePlayer);
-    audioCache.loop('new.mp3');
+    audioCache.play('new.mp3');
+
+
+    advancePlayer.durationHandler = (d) => setState((){
+      _duration = d;
+    });
+    advancePlayer.positionHandler = (p) => setState((){
+      _position = p;
+    });
   }
+
+
 
   String localFilePath;
 
@@ -98,6 +113,8 @@ class _MyAppState extends State<MyApp> {
     );
   }
 
+
+
   void choiceAction(String choice){
     if(choice == manu.Setting){
       print('Setting');
@@ -105,8 +122,11 @@ class _MyAppState extends State<MyApp> {
     if(choice == manu.About){
       print('About Page');
     }
-    if(choice == manu.Subscribe){
+    if(choice == manu.Exit){
       print('Subscribe');
+      advancePlayer.stop();
+      SystemNavigator.pop();
+
     }
   }
 }

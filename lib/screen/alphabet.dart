@@ -1433,7 +1433,7 @@ class _AlphabetLayoutState extends State<AlphabetLayout> {
                         children: <Widget>[
                           GestureDetector(
                             onTap: (){
-                              audioCache.play('z.mp3');
+                              audioCache.play('u.mp3');
                             },
                             child: Container(
                               height: 200.0,
@@ -1458,7 +1458,7 @@ class _AlphabetLayoutState extends State<AlphabetLayout> {
                                       Row(
                                         mainAxisAlignment: MainAxisAlignment.center,
                                         children: <Widget>[
-                                          Text("Z", style: TextStyle(color: Colors.brown,fontSize: 120.0, fontFamily: 'Comic', fontWeight: FontWeight.bold),),
+                                          Text("U", style: TextStyle(color: Colors.brown,fontSize: 120.0, fontFamily: 'Comic', fontWeight: FontWeight.bold),),
                                         ],
                                       ),
                                     ],
@@ -1467,11 +1467,275 @@ class _AlphabetLayoutState extends State<AlphabetLayout> {
                               ),
                             ),
                           ),
-                          Text("Z for Zebra", style: TextStyle(fontSize: 15.0, fontFamily: 'Comic', fontWeight: FontWeight.bold),),
+                          Text("U for Umbrella", style: TextStyle(fontSize: 15.0, fontFamily: 'Comic', fontWeight: FontWeight.bold),),
                           Container(
                             width: 80.0,
                             height: 80.0,
-                            child: Image.asset('assets/zebra.png'),
+                            child: Image.asset('assets/alphabet/umbrella.png'),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                  Padding(
+                    padding: EdgeInsets.all(10.0),
+                    child: Container(
+                      width: double.infinity,
+                      height: double.infinity,
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(10.0),
+                          color: Colors.white,
+                          boxShadow: [
+                            BoxShadow(
+                                color: Colors.black26,
+                                offset: Offset(2, 1),
+                                blurRadius: 09.0
+                            )
+                          ]
+                      ),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: <Widget>[
+                          GestureDetector(
+                            onTap: (){
+                              audioCache.play('v.mp3');
+                            },
+                            child: Container(
+                              height: 200.0,
+                              width: 200.0,
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(100.0),
+                              ),
+                              child: Stack(
+                                children: <Widget>[
+                                  Positioned(
+                                    bottom: 5.0,
+                                    right: 85.0,
+                                    child: Container(
+                                      height: 34.0,
+                                      width: 34.0,
+                                      child: Image.asset('assets/music/hand.png', ),
+                                    ),
+                                  ),
+                                  Column(
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: <Widget>[
+                                      Row(
+                                        mainAxisAlignment: MainAxisAlignment.center,
+                                        children: <Widget>[
+                                          Text("V", style: TextStyle(color: Colors.brown,fontSize: 120.0, fontFamily: 'Comic', fontWeight: FontWeight.bold),),
+                                        ],
+                                      ),
+                                    ],
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ),
+                          Text("V for Violin", style: TextStyle(fontSize: 15.0, fontFamily: 'Comic', fontWeight: FontWeight.bold),),
+                          Container(
+                            width: 80.0,
+                            height: 80.0,
+                            child: Image.asset('assets/alphabet/violin.png'),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                  Padding(
+                    padding: EdgeInsets.all(10.0),
+                    child: Container(
+                      width: double.infinity,
+                      height: double.infinity,
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(10.0),
+                          color: Colors.white,
+                          boxShadow: [
+                            BoxShadow(
+                                color: Colors.black26,
+                                offset: Offset(2, 1),
+                                blurRadius: 09.0
+                            )
+                          ]
+                      ),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: <Widget>[
+                          GestureDetector(
+                            onTap: (){
+                              audioCache.play('w.mp3');
+                            },
+                            child: Container(
+                              height: 200.0,
+                              width: 200.0,
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(100.0),
+                              ),
+                              child: Stack(
+                                children: <Widget>[
+                                  Positioned(
+                                    bottom: 5.0,
+                                    right: 85.0,
+                                    child: Container(
+                                      height: 34.0,
+                                      width: 34.0,
+                                      child: Image.asset('assets/music/hand.png', ),
+                                    ),
+                                  ),
+                                  Column(
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: <Widget>[
+                                      Row(
+                                        mainAxisAlignment: MainAxisAlignment.center,
+                                        children: <Widget>[
+                                          Text("W", style: TextStyle(color: Colors.brown,fontSize: 120.0, fontFamily: 'Comic', fontWeight: FontWeight.bold),),
+                                        ],
+                                      ),
+                                    ],
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ),
+                          Text("W for WaterMelon", style: TextStyle(fontSize: 15.0, fontFamily: 'Comic', fontWeight: FontWeight.bold),),
+                          Container(
+                            width: 80.0,
+                            height: 80.0,
+                            child: Image.asset('assets/alphabet/waterme.png'),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                  Padding(
+                    padding: EdgeInsets.all(10.0),
+                    child: Container(
+                      width: double.infinity,
+                      height: double.infinity,
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(10.0),
+                          color: Colors.white,
+                          boxShadow: [
+                            BoxShadow(
+                                color: Colors.black26,
+                                offset: Offset(2, 1),
+                                blurRadius: 09.0
+                            )
+                          ]
+                      ),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: <Widget>[
+                          GestureDetector(
+                            onTap: (){
+                              audioCache.play('x.mp3');
+                            },
+                            child: Container(
+                              height: 200.0,
+                              width: 200.0,
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(100.0),
+                              ),
+                              child: Stack(
+                                children: <Widget>[
+                                  Positioned(
+                                    bottom: 5.0,
+                                    right: 85.0,
+                                    child: Container(
+                                      height: 34.0,
+                                      width: 34.0,
+                                      child: Image.asset('assets/music/hand.png', ),
+                                    ),
+                                  ),
+                                  Column(
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: <Widget>[
+                                      Row(
+                                        mainAxisAlignment: MainAxisAlignment.center,
+                                        children: <Widget>[
+                                          Text("X", style: TextStyle(color: Colors.brown,fontSize: 120.0, fontFamily: 'Comic', fontWeight: FontWeight.bold),),
+                                        ],
+                                      ),
+                                    ],
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ),
+                          Text("X for Xylophone", style: TextStyle(fontSize: 15.0, fontFamily: 'Comic', fontWeight: FontWeight.bold),),
+                          Container(
+                            width: 80.0,
+                            height: 80.0,
+                            child: Image.asset('assets/alphabet/xylophone.png'),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                  Padding(
+                    padding: EdgeInsets.all(10.0),
+                    child: Container(
+                      width: double.infinity,
+                      height: double.infinity,
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(10.0),
+                          color: Colors.white,
+                          boxShadow: [
+                            BoxShadow(
+                                color: Colors.black26,
+                                offset: Offset(2, 1),
+                                blurRadius: 09.0
+                            )
+                          ]
+                      ),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: <Widget>[
+                          GestureDetector(
+                            onTap: (){
+                              audioCache.play('y.mp3');
+                            },
+                            child: Container(
+                              height: 200.0,
+                              width: 200.0,
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(100.0),
+                              ),
+                              child: Stack(
+                                children: <Widget>[
+                                  Positioned(
+                                    bottom: 5.0,
+                                    right: 85.0,
+                                    child: Container(
+                                      height: 34.0,
+                                      width: 34.0,
+                                      child: Image.asset('assets/music/hand.png', ),
+                                    ),
+                                  ),
+                                  Column(
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: <Widget>[
+                                      Row(
+                                        mainAxisAlignment: MainAxisAlignment.center,
+                                        children: <Widget>[
+                                          Text("Y", style: TextStyle(color: Colors.brown,fontSize: 120.0, fontFamily: 'Comic', fontWeight: FontWeight.bold),),
+                                        ],
+                                      ),
+                                    ],
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ),
+                          Text("Y for Yacht", style: TextStyle(fontSize: 15.0, fontFamily: 'Comic', fontWeight: FontWeight.bold),),
+                          Container(
+                            width: 80.0,
+                            height: 80.0,
+                            child: Image.asset('assets/alphabet/yacht.png'),
                           ),
                         ],
                       ),
@@ -1537,205 +1801,7 @@ class _AlphabetLayoutState extends State<AlphabetLayout> {
                           Container(
                             width: 80.0,
                             height: 80.0,
-                            child: Image.asset('assets/zebra.png'),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ),
-                  Padding(
-                    padding: EdgeInsets.all(10.0),
-                    child: Container(
-                      width: double.infinity,
-                      height: double.infinity,
-                      decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(10.0),
-                          color: Colors.white,
-                          boxShadow: [
-                            BoxShadow(
-                                color: Colors.black26,
-                                offset: Offset(2, 1),
-                                blurRadius: 09.0
-                            )
-                          ]
-                      ),
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        children: <Widget>[
-                          GestureDetector(
-                            onTap: (){
-                              audioCache.play('z.mp3');
-                            },
-                            child: Container(
-                              height: 200.0,
-                              width: 200.0,
-                              decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(100.0),
-                              ),
-                              child: Stack(
-                                children: <Widget>[
-                                  Positioned(
-                                    bottom: 5.0,
-                                    right: 85.0,
-                                    child: Container(
-                                      height: 34.0,
-                                      width: 34.0,
-                                      child: Image.asset('assets/music/hand.png', ),
-                                    ),
-                                  ),
-                                  Column(
-                                    mainAxisAlignment: MainAxisAlignment.center,
-                                    children: <Widget>[
-                                      Row(
-                                        mainAxisAlignment: MainAxisAlignment.center,
-                                        children: <Widget>[
-                                          Text("Z", style: TextStyle(color: Colors.brown,fontSize: 120.0, fontFamily: 'Comic', fontWeight: FontWeight.bold),),
-                                        ],
-                                      ),
-                                    ],
-                                  ),
-                                ],
-                              ),
-                            ),
-                          ),
-                          Text("Z for Zebra", style: TextStyle(fontSize: 15.0, fontFamily: 'Comic', fontWeight: FontWeight.bold),),
-                          Container(
-                            width: 80.0,
-                            height: 80.0,
-                            child: Image.asset('assets/zebra.png'),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ),
-                  Padding(
-                    padding: EdgeInsets.all(10.0),
-                    child: Container(
-                      width: double.infinity,
-                      height: double.infinity,
-                      decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(10.0),
-                          color: Colors.white,
-                          boxShadow: [
-                            BoxShadow(
-                                color: Colors.black26,
-                                offset: Offset(2, 1),
-                                blurRadius: 09.0
-                            )
-                          ]
-                      ),
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        children: <Widget>[
-                          GestureDetector(
-                            onTap: (){
-                              audioCache.play('z.mp3');
-                            },
-                            child: Container(
-                              height: 200.0,
-                              width: 200.0,
-                              decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(100.0),
-                              ),
-                              child: Stack(
-                                children: <Widget>[
-                                  Positioned(
-                                    bottom: 5.0,
-                                    right: 85.0,
-                                    child: Container(
-                                      height: 34.0,
-                                      width: 34.0,
-                                      child: Image.asset('assets/music/hand.png', ),
-                                    ),
-                                  ),
-                                  Column(
-                                    mainAxisAlignment: MainAxisAlignment.center,
-                                    children: <Widget>[
-                                      Row(
-                                        mainAxisAlignment: MainAxisAlignment.center,
-                                        children: <Widget>[
-                                          Text("Z", style: TextStyle(color: Colors.brown,fontSize: 120.0, fontFamily: 'Comic', fontWeight: FontWeight.bold),),
-                                        ],
-                                      ),
-                                    ],
-                                  ),
-                                ],
-                              ),
-                            ),
-                          ),
-                          Text("Z for Zebra", style: TextStyle(fontSize: 15.0, fontFamily: 'Comic', fontWeight: FontWeight.bold),),
-                          Container(
-                            width: 80.0,
-                            height: 80.0,
-                            child: Image.asset('assets/zebra.png'),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ),
-                  Padding(
-                    padding: EdgeInsets.all(10.0),
-                    child: Container(
-                      width: double.infinity,
-                      height: double.infinity,
-                      decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(10.0),
-                          color: Colors.white,
-                          boxShadow: [
-                            BoxShadow(
-                                color: Colors.black26,
-                                offset: Offset(2, 1),
-                                blurRadius: 09.0
-                            )
-                          ]
-                      ),
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        children: <Widget>[
-                          GestureDetector(
-                            onTap: (){
-                              audioCache.play('z.mp3');
-                            },
-                            child: Container(
-                              height: 200.0,
-                              width: 200.0,
-                              decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(100.0),
-                              ),
-                              child: Stack(
-                                children: <Widget>[
-                                  Positioned(
-                                    bottom: 5.0,
-                                    right: 85.0,
-                                    child: Container(
-                                      height: 34.0,
-                                      width: 34.0,
-                                      child: Image.asset('assets/music/hand.png', ),
-                                    ),
-                                  ),
-                                  Column(
-                                    mainAxisAlignment: MainAxisAlignment.center,
-                                    children: <Widget>[
-                                      Row(
-                                        mainAxisAlignment: MainAxisAlignment.center,
-                                        children: <Widget>[
-                                          Text("Z", style: TextStyle(color: Colors.brown,fontSize: 120.0, fontFamily: 'Comic', fontWeight: FontWeight.bold),),
-                                        ],
-                                      ),
-                                    ],
-                                  ),
-                                ],
-                              ),
-                            ),
-                          ),
-                          Text("Z for Zebra", style: TextStyle(fontSize: 15.0, fontFamily: 'Comic', fontWeight: FontWeight.bold),),
-                          Container(
-                            width: 80.0,
-                            height: 80.0,
-                            child: Image.asset('assets/zebra.png'),
+                            child: Image.asset('assets/animals/animal12.png'),
                           ),
                         ],
                       ),

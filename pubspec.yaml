@@ -77,7 +77,7 @@ flutter:
     - assets/alphabet/fruits7.png
     - assets/alphabet/fruits9.png
     - assets/alphabet/fruits9.png
-    - assets/alphabet/fruits17.png
+    - assets/fruits/fruits17.png
     - assets/alphabet/panda.png
     - assets/alphabet/yacht.png
     - assets/alphabet/xylophone.png
@@ -153,6 +153,7 @@ flutter:
     - assets/x.mp3
     - assets/y.mp3
     - assets/z.mp3
+    - assets/animal.mp3
     - assets/new-animal/snake.png
     - assets/fruits/fruits1.png
     - assets/fruits/fruits2.png
