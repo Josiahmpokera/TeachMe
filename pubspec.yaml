@@ -124,6 +124,7 @@ flutter:
     - assets/song/mack.jpg
     - assets/song/animals.jpg
     - assets/song/john.jpg
+    - assets/song/number.jpg
     - assets/sample.mp3
     - assets/click.mp3
     - assets/new.mp3
@@ -154,6 +155,9 @@ flutter:
     - assets/y.mp3
     - assets/z.mp3
     - assets/animal.mp3
+    - assets/old.mp3
+    - assets/number.mp3
+    - assets/kids.mp3
     - assets/new-animal/snake.png
     - assets/fruits/fruits1.png
     - assets/fruits/fruits2.png
