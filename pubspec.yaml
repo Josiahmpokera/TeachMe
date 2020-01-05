@@ -121,6 +121,14 @@ flutter:
     - assets/new-animal/monkey.png
     - assets/new-animal/panda-bear.png
     - assets/new-animal/fruit.png
+    - assets/cars/bus.png
+    - assets/cars/crane.png
+    - assets/cars/fork_lif.png
+    - assets/cars/motorcycle.png
+    - assets/cars/ship.png
+    - assets/cars/suv.png
+    - assets/cars/train.png
+    - assets/cars/truck.png
     - assets/song/mack.jpg
     - assets/song/animals.jpg
     - assets/song/john.jpg
