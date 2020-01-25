@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:audioplayers/audioplayers.dart';
 import 'package:audioplayers/audio_cache.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_one/screen/about.dart';
 import 'home.dart';
 import 'task.dart';
 import 'song.dart';
@@ -60,7 +61,6 @@ class _MyAppState extends State<MyApp> {
   ];
 
 
-
   @override
   Widget build(BuildContext context) {
 
@@ -85,7 +85,7 @@ class _MyAppState extends State<MyApp> {
                     );
                   }).toList();
                 },
-              )
+              ),
             ],
 
         ),
@@ -111,8 +111,8 @@ class _MyAppState extends State<MyApp> {
         ),
     ),
     );
-  }
 
+  }
 
 
   void choiceAction(String choice){
@@ -126,7 +126,7 @@ class _MyAppState extends State<MyApp> {
       print('Subscribe');
       advancePlayer.stop();
       SystemNavigator.pop();
-
     }
   }
+
 }
