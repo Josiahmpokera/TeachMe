@@ -61,12 +61,18 @@ class _MyAppState extends State<MyApp> {
   ];
 
 
+  void _openAbout(){
+    Navigator.of(context).push(MaterialPageRoute(builder: (context) => AboutApp()));
+  }
+
+
   @override
   Widget build(BuildContext context) {
+    void AboutNavigator(){
 
-
-
+    };
     return MaterialApp(
+
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
@@ -120,7 +126,8 @@ class _MyAppState extends State<MyApp> {
       print('Setting');
     }
     if(choice == manu.About){
-      print('About Page');
+      print('clicked');
+      _openAbout();
     }
     if(choice == manu.Exit){
       print('Subscribe');
