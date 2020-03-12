@@ -49,7 +49,6 @@ class _MyAppState extends State<MyApp> {
   }
 
 
-
   String localFilePath;
 
   int currentPage = 0;
@@ -111,7 +110,7 @@ class _MyAppState extends State<MyApp> {
           },
           items: [
             BottomNavigationBarItem(icon: Image.asset('assets/home.png', scale: 2.2,), title: Text("Home")),
-            BottomNavigationBarItem(icon: Image.asset('assets/task.png', scale: 2.2,), title: Text("Task")),
+            BottomNavigationBarItem(icon: Image.asset('assets/books_bottom.png', scale: 2.2,), title: Text("Swahili")),
             BottomNavigationBarItem(icon: Image.asset('assets/music.png', scale: 2.2,), title: Text("Song")),
           ]
         ),
