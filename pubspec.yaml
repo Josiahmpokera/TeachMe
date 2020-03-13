@@ -185,6 +185,7 @@ flutter:
     - assets/swahili_assets/speaker.png
     - assets/swahili_assets/flower.png
     - assets/swahili_assets/screem.png
+    - assets/swahili_assets/baba.png
 
 
         # An image asset can refer to one or more resolution-specific "variants", see

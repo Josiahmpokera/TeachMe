@@ -1,3 +1,4 @@
+import 'package:flutter/animation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_one/swahili_screen/silabi_screen.dart';
 import 'task-form.dart';
@@ -27,7 +28,9 @@ class MainContainer extends StatefulWidget {
   _MainContainerState createState() => _MainContainerState();
 }
 
-class _MainContainerState extends State<MainContainer> {
+class _MainContainerState extends State<MainContainer> with SingleTickerProviderStateMixin {
+
+
   @override
   Widget build(BuildContext context) {
     double centerheight = MediaQuery.of(context).size.height / 6;
@@ -48,6 +51,7 @@ class _MainContainerState extends State<MainContainer> {
                 children: <Widget>[
                   GestureDetector(
                     onTap: (){
+
                       Navigator.push(context, MaterialPageRoute(builder: (context) => IrabuScreen()) );
                     },
                     child: Container(
@@ -162,35 +166,41 @@ class _MainContainerState extends State<MainContainer> {
 
                   //maneno ya silabi container
 
-                  Container(
-                    width: widthCOntainer,
-                    margin: EdgeInsets.symmetric(horizontal: 14, vertical: 10),
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(12),
-                      color: Colors.white,
-                    ),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceAround,
-                      children: <Widget>[
-                        Container(
-                          height: 80,
-                          width: 80,
-                          child: Image.asset('assets/aeiou.png'),
-                        ),
-                        Column(
-                          children: <Widget>[
-                            Text("Maneno", style: TextStyle(color: Colors.brown, fontFamily: 'Comic', fontSize: 30, fontWeight: FontWeight.bold),),
-                            Text("Jifunze maneno ya silabi", style: TextStyle(fontFamily: 'comic',),),
-                          ],
-                        ),
-
-                        Container(
-                          width: containerWidth,
-                          child: IconButton(
-                            icon: Icon(Icons.sentiment_very_satisfied, color: Colors.lightBlueAccent,),
+                  GestureDetector(
+                    onTap: (){
+                      print("Silabi Maneno Clicked");
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => SilabiManeno()));
+                    },
+                    child: Container(
+                      width: widthCOntainer,
+                      margin: EdgeInsets.symmetric(horizontal: 14, vertical: 10),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(12),
+                        color: Colors.white,
+                      ),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceAround,
+                        children: <Widget>[
+                          Container(
+                            height: 80,
+                            width: 80,
+                            child: Image.asset('assets/aeiou.png'),
                           ),
-                        ),
-                      ],
+                          Column(
+                            children: <Widget>[
+                              Text("Maneno", style: TextStyle(color: Colors.brown, fontFamily: 'Comic', fontSize: 30, fontWeight: FontWeight.bold),),
+                              Text("Jifunze maneno ya silabi", style: TextStyle(fontFamily: 'comic',),),
+                            ],
+                          ),
+
+                          Container(
+                            width: containerWidth,
+                            child: IconButton(
+                              icon: Icon(Icons.sentiment_very_satisfied, color: Colors.lightBlueAccent,),
+                            ),
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                 ],
