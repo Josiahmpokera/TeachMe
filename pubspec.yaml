@@ -186,9 +186,26 @@ flutter:
     - assets/swahili_assets/flower.png
     - assets/swahili_assets/screem.png
     - assets/swahili_assets/baba.png
+    - assets/swahili_assets/chai.png
+    - assets/swahili_assets/dada.png
+    - assets/swahili_assets/fagio.png
+    - assets/swahili_assets/gari.png
+    - assets/swahili_assets/hoho.png
+    - assets/swahili_assets/kuku.png
+    - assets/swahili_assets/gauni.png
+    - assets/swahili_assets/lala.png
+    - assets/swahili_assets/mama.png
+    - assets/swahili_assets/nazi.png
+    - assets/swahili_assets/ruka.png
+    - assets/swahili_assets/saa.png
+    - assets/swahili_assets/taa.png
+    - assets/swahili_assets/viatu.png
+    - assets/swahili_assets/yai.png
+    - assets/swahili_assets/zeze.png
 
 
-        # An image asset can refer to one or more resolution-specific "variants", see
+
+    # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
 
   # For details regarding adding assets from package dependencies, see

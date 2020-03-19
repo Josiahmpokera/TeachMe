@@ -39,7 +39,7 @@ class _AnimalLayoutState extends State<AnimalLayout> {
               CarouselSlider(
                 height: 400.0,
                 initialPage: 0,
-                reverse: false,
+                reverse: true,
                 enlargeCenterPage: true,
                 scrollDirection: Axis.horizontal,
                 onPageChanged: (index){

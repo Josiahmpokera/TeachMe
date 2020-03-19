@@ -1,10 +1,28 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:carousel_slider/carousel_slider.dart';
+import 'package:flutter_one/swahili_screen/silabi.dart';
 
 class SilabiManeno extends StatefulWidget {
   @override
   _SilabiManenoState createState() => _SilabiManenoState();
 }
+
+//The Class for List of babu
+
+class Maneno {
+  var  words = ['baba', 'chai', 'dada', 'fagio', 'gari', 'hoho','kuku', 'gauni', 'lala', 'mama', 'nazi', 'pipi', 'ruka', 'saa', 'taa', 'viatu', 'jiwe', 'yai', 'zeze'];
+  var picture = ['assets/swahili_assets/baba.png', 'assets/swahili_assets/baba.png', 'assets/swahili_assets/baba.png', 'assets/swahili_assets/baba.png',];
+  void doIt(){
+    print("Container Clicked");
+  }
+
+}
+
+
+
+//End of the function
+
 
 class _SilabiManenoState extends State<SilabiManeno> {
   @override
@@ -48,57 +66,59 @@ class _SilabiManenoContainerState extends State<SilabiManenoContainer> {
           fit: BoxFit.cover,
         ),
       ),
-      child: SingleChildScrollView(
-        scrollDirection: Axis.vertical,
+      child: Container(
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
-            Container(
-              margin: EdgeInsets.symmetric(horizontal: 12, vertical: 7),
-              decoration: BoxDecoration(
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.black26,
-                    blurRadius: 8,
-                    offset: Offset(2, 3),
+            CarouselSlider.builder(
+                height: 400,
+                initialPage: 10,
+                enableInfiniteScroll: true,
+                reverse: false,
+                enlargeCenterPage: true,
+                scrollDirection: Axis.horizontal,
+                itemCount: activity.length,
+                onPageChanged: (index){
+                 if(activity[index].neno ==  'dada'){
+                   print("Dada Changed");
+                 }
+                 if(activity[index].neno == 'fagio'){
+                   print("Fagio Changed");
+                 }
+                },
+                itemBuilder: (BuildContext context, int index){
+              return GestureDetector(
+                onTap: (){
+                  if(activity[index].neno == 'nazi'){
+                    print("nazi Container Clicked");
+                  }
+                },
+                child: Container(
+                  width: MediaQuery.of(context).size.width,
+                  margin: EdgeInsets.all(15.0),
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(10.0),
+                    color: Colors.white,
+                    boxShadow: [
+                      BoxShadow(
+                          color: Colors.black26,
+                          offset: Offset(2, 1),
+                          blurRadius: 09.0
+                      )
+                    ],
                   ),
-                ],
-                borderRadius: BorderRadius.circular(10),
-                color: Colors.white
-              ),
-              height: 100,
-              width: double.infinity,
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceAround,
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: <Widget>[
-                  Container(
-                    height: 74,
-                    width: 74,
-                    child: Image.asset('assets/swahili_assets/baba.png'),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: <Widget>[
+                      Image.asset(activity[index].image),
+                      Text(activity[index].neno, style: TextStyle(fontSize: 55.0, fontFamily: 'comic', fontWeight: FontWeight.w600, color: Colors.brown),),
+                      IconButton(icon: Icon(Icons.volume_up, size: 45, color: Colors.green,),),
+                    ],
                   ),
-                  Text("babu", style: TextStyle(fontSize: 50, color: Colors.brown, fontFamily: 'comic')),
-                  GestureDetector(
-                    onTap: (){
-                      print("Babu word Clicked!!");
-                    },
-                    child: Container(
-                      decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(34),
-                          color: Colors.white,
-                          boxShadow: [
-                            BoxShadow(
-                                color: Colors.red,
-                                offset: Offset(1, 3)
-                            )
-                          ]
-                      ),
-                      height: 55,
-                      width: 55,
-                      child: IconButton(icon: Icon(Icons.play_circle_filled, color: Colors.lightBlueAccent, size: 40,),),
-                    ),
-                  ),
-                ],
-              ),
+                ),
+              );
+            }
             ),
           ],
         ),

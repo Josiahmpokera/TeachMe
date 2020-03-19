@@ -78,7 +78,7 @@ class _MainContainerState extends State<MainContainer> with SingleTickerProvider
                             ),
                           ),
                           Container(
-                            width: containerWidth,
+                            width: 80,
                             child: IconButton(
                               icon: Icon(Icons.sentiment_very_satisfied, color: Colors.greenAccent,),
                             ),
@@ -88,7 +88,7 @@ class _MainContainerState extends State<MainContainer> with SingleTickerProvider
                     ),
                   ),
 
-                  //AAnother COntainer
+                  //AAnother Container
                   GestureDetector(
                     onTap: (){
                       Navigator.push(context, MaterialPageRoute(builder: (context) => ManenoScreen()));
@@ -115,7 +115,7 @@ class _MainContainerState extends State<MainContainer> with SingleTickerProvider
                             ],
                           ),
                           Container(
-                            width: containerWidth,
+                            width: 80,
                             child: IconButton(
                               icon: Icon(Icons.sentiment_very_satisfied, color: Colors.yellow),
                             ),
@@ -154,7 +154,7 @@ class _MainContainerState extends State<MainContainer> with SingleTickerProvider
                             ],
                           ),
                           Container(
-                            width: containerWidth,
+                            width: 80,
                             child: IconButton(
                               icon: Icon(Icons.sentiment_very_satisfied, color: Colors.pink),
                             ),
@@ -194,7 +194,7 @@ class _MainContainerState extends State<MainContainer> with SingleTickerProvider
                           ),
 
                           Container(
-                            width: containerWidth,
+                            width: 80,
                             child: IconButton(
                               icon: Icon(Icons.sentiment_very_satisfied, color: Colors.lightBlueAccent,),
                             ),
