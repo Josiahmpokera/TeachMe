@@ -53,7 +53,7 @@ class Activity {
 });
 }
 
-List<Activity> activity = [
+  List<Activity> activity = [
   Activity(
     image: 'assets/swahili_assets/baba.png',
     neno: 'babu',

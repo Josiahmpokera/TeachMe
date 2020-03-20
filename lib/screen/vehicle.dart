@@ -41,7 +41,7 @@ class _VehicleLayoutState extends State<VehicleLayout> {
               height: 60.0,
               width: 60.0,
               decoration: BoxDecoration(
-                  borderRadius: BorderRadius.only(topLeft: Radius.circular(10.0), bottomLeft: Radius.circular(45.0), topRight: Radius.circular(10.0), bottomRight: Radius.circular(10.0)),
+                  borderRadius: BorderRadius.circular(15),
                   color: Colors.white,
                   boxShadow: [
                     BoxShadow(
@@ -67,7 +67,7 @@ class _VehicleLayoutState extends State<VehicleLayout> {
               height: 60.0,
               width: 60.0,
               decoration: BoxDecoration(
-                  borderRadius: BorderRadius.only(topLeft: Radius.circular(30.0), bottomLeft: Radius.circular(45.0), topRight: Radius.circular(30.0), bottomRight: Radius.circular(10.0)),
+                  borderRadius: BorderRadius.circular(15),
                   color: Colors.white,
                   boxShadow: [
                     BoxShadow(
@@ -93,7 +93,7 @@ class _VehicleLayoutState extends State<VehicleLayout> {
               height: 60.0,
               width: 60.0,
               decoration: BoxDecoration(
-                  borderRadius: BorderRadius.only(topLeft: Radius.circular(30.0), bottomLeft: Radius.circular(45.0), topRight: Radius.circular(10.0), bottomRight: Radius.circular(30.0)),
+                  borderRadius: BorderRadius.circular(15),
                   color: Colors.white,
                   boxShadow: [
                     BoxShadow(
@@ -119,7 +119,7 @@ class _VehicleLayoutState extends State<VehicleLayout> {
               height: 60.0,
               width: 60.0,
               decoration: BoxDecoration(
-                  borderRadius: BorderRadius.only(topLeft: Radius.circular(10.0), bottomLeft: Radius.circular(45.0), topRight: Radius.circular(30.0), bottomRight: Radius.circular(30.0)),
+                  borderRadius: BorderRadius.circular(15),
                   color: Colors.white,
                   boxShadow: [
                     BoxShadow(
@@ -147,7 +147,7 @@ class _VehicleLayoutState extends State<VehicleLayout> {
               height: 60.0,
               width: 60.0,
               decoration: BoxDecoration(
-                  borderRadius: BorderRadius.only(topLeft: Radius.circular(10.0), bottomLeft: Radius.circular(10.0), topRight: Radius.circular(10.0), bottomRight: Radius.circular(30.0)),
+                  borderRadius: BorderRadius.circular(15),
                   color: Colors.white,
                   boxShadow: [
                     BoxShadow(
@@ -173,7 +173,7 @@ class _VehicleLayoutState extends State<VehicleLayout> {
               height: 60.0,
               width: 60.0,
               decoration: BoxDecoration(
-                  borderRadius: BorderRadius.only(topLeft: Radius.circular(10.0), bottomLeft: Radius.circular(45.0), topRight: Radius.circular(30.0), bottomRight: Radius.circular(30.0)),
+                  borderRadius: BorderRadius.circular(15),
                   color: Colors.white,
                   boxShadow: [
                     BoxShadow(
@@ -199,7 +199,7 @@ class _VehicleLayoutState extends State<VehicleLayout> {
               height: 60.0,
               width: 60.0,
               decoration: BoxDecoration(
-                  borderRadius: BorderRadius.only(topLeft: Radius.circular(30.0), bottomLeft: Radius.circular(45.0), topRight: Radius.circular(10.0), bottomRight: Radius.circular(30.0)),
+                  borderRadius: BorderRadius.circular(15),
                   color: Colors.white,
                   boxShadow: [
                     BoxShadow(
@@ -227,7 +227,7 @@ class _VehicleLayoutState extends State<VehicleLayout> {
               height: 60.0,
               width: 60.0,
               decoration: BoxDecoration(
-                  borderRadius: BorderRadius.only(topLeft: Radius.circular(10.0), bottomLeft: Radius.circular(45.0), topRight: Radius.circular(10.0), bottomRight: Radius.circular(30.0)),
+                  borderRadius: BorderRadius.circular(15),
                   color: Colors.white,
                   boxShadow: [
                     BoxShadow(

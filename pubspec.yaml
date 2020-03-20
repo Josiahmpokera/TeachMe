@@ -163,7 +163,6 @@ flutter:
     - assets/y.mp3
     - assets/z.mp3
     - assets/animal.mp3
-    - assets/old.mp3
     - assets/number.mp3
     - assets/kids.mp3
     - assets/new-animal/snake.png
@@ -202,6 +201,18 @@ flutter:
     - assets/swahili_assets/viatu.png
     - assets/swahili_assets/yai.png
     - assets/swahili_assets/zeze.png
+    - assets/cat.mp3
+    - assets/cow.mp3
+    - assets/elephant.mp3
+    - assets/girrafe.mp3
+    - assets/lion1.mp3
+    - assets/monkey.mp3
+    - assets/panda.mp3
+    - assets/snake.mp3
+    - assets/zebra.mp3
+    - assets/clothers_folder/dress.png
+    - assets/clothers_folder/shirt.png
+    - assets/clothers_folder/shorts.png
 
 
 

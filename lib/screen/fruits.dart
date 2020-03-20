@@ -45,38 +45,44 @@ class _FruitsLayoutState extends State<FruitsLayout> {
             SliverList(
               delegate: SliverChildListDelegate([
                 SizedBox(height: 10.0,),
-                Container(
-                  width: double.infinity,
-                  height: 120.0,
-                  child: Row(
-                    children: <Widget>[
-                      Container(
-                        width: halfWidth,
-                        height: 110,
-                        child: Image.asset('assets/fruits/fruits9.png'),
-                      ),
-                      Container(
-                       width: halfWidth,
-                       height: 110,
-                       child: Column(
-                         mainAxisAlignment: MainAxisAlignment.center,
-                         children: <Widget>[
-                           Text("Banana", style: TextStyle(fontFamily: 'Comic', fontSize: 23.0),),
-                         ],
-                       ),
-                      ),
-                      Container(
-                        width: halfWidth,
-                        height: 110,
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.center,
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: <Widget>[
-                            IconButton(icon: Icon(Icons.play_circle_filled, size: 54.0, color: Colors.black87,),)
-                          ],
+                GestureDetector(
+                  onTap: (){
+                    print("Banana Clicked!");
+                  },
+                  child: Container(
+                    width: double.infinity,
+                    height: 120.0,
+                    child: Row(
+                      children: <Widget>[
+                        Container(
+                          width: halfWidth,
+                          height: 110,
+                          child: Image.asset('assets/fruits/fruits9.png'),
                         ),
-                      ),
-                    ],
+                        Container(
+                          width: halfWidth,
+                          height: 110,
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: <Widget>[
+                              Text("Banana", style: TextStyle(fontFamily: 'Comic', fontSize: 33.0, color: Colors.white, fontWeight: FontWeight.w600),
+                              ),
+                            ],
+                          ),
+                        ),
+                        Container(
+                          width: halfWidth,
+                          height: 110,
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: <Widget>[
+                              IconButton(icon: Icon(Icons.play_circle_filled, size: 54.0, color: Colors.black87,),)
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                 ),
                 Container(
@@ -101,7 +107,7 @@ class _FruitsLayoutState extends State<FruitsLayout> {
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: <Widget>[
-                            Text("Apple", style: TextStyle(color: Colors.white,fontFamily: 'Comic', fontSize: 23.0),),
+                            Text("Apple", style: TextStyle(fontFamily: 'Comic', fontSize: 33.0, color: Colors.white, fontWeight: FontWeight.w600),),
                           ],
                         ),
                       ),
@@ -141,7 +147,7 @@ class _FruitsLayoutState extends State<FruitsLayout> {
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: <Widget>[
-                            Text("Avocado", style: TextStyle(color: Colors.white,fontFamily: 'Comic', fontSize: 23.0),),
+                            Text("Avocado", style: TextStyle(fontFamily: 'Comic', fontSize: 33.0, color: Colors.white, fontWeight: FontWeight.w600),),
                           ],
                         ),
                       ),
@@ -181,7 +187,7 @@ class _FruitsLayoutState extends State<FruitsLayout> {
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: <Widget>[
-                            Text("Grape", style: TextStyle(color: Colors.white,fontFamily: 'Comic', fontSize: 23.0),),
+                            Text("Grape", style: TextStyle(fontFamily: 'Comic', fontSize: 33.0, color: Colors.white, fontWeight: FontWeight.w600),),
                           ],
                         ),
                       ),
@@ -221,7 +227,7 @@ class _FruitsLayoutState extends State<FruitsLayout> {
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: <Widget>[
-                            Text("Mango", style: TextStyle(fontFamily: 'Comic', fontSize: 23.0, color: Colors.white),),
+                            Text("Mango", style: TextStyle(fontFamily: 'Comic', fontSize: 33.0, color: Colors.white, fontWeight: FontWeight.w600),),
                           ],
                         ),
                       ),
@@ -261,7 +267,7 @@ class _FruitsLayoutState extends State<FruitsLayout> {
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: <Widget>[
-                            Text("Orange", style: TextStyle(fontFamily: 'Comic', fontSize: 23.0, color: Colors.white),),
+                            Text("Orange", style: TextStyle(fontFamily: 'Comic', fontSize: 33.0, color: Colors.white, fontWeight: FontWeight.w600),),
                           ],
                         ),
                       ),
@@ -301,7 +307,7 @@ class _FruitsLayoutState extends State<FruitsLayout> {
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: <Widget>[
-                            Text("Papaya", style: TextStyle(fontFamily: 'Comic', fontSize: 23.0, color: Colors.white),),
+                            Text("Papaya", style: TextStyle(fontFamily: 'Comic', fontSize: 33.0, color: Colors.white, fontWeight: FontWeight.w600),),
                           ],
                         ),
                       ),
@@ -341,7 +347,7 @@ class _FruitsLayoutState extends State<FruitsLayout> {
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: <Widget>[
-                            Text("Peach", style: TextStyle(fontFamily: 'Comic', fontSize: 23.0, color: Colors.white),),
+                            Text("Peach", style: TextStyle(fontFamily: 'Comic', fontSize: 33.0, color: Colors.white, fontWeight: FontWeight.w600),),
                           ],
                         ),
                       ),
@@ -381,7 +387,7 @@ class _FruitsLayoutState extends State<FruitsLayout> {
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: <Widget>[
-                            Text("Plum", style: TextStyle(fontFamily: 'Comic', fontSize: 23.0, color: Colors.white),),
+                            Text("Plum", style: TextStyle(fontFamily: 'Comic', fontSize: 33.0, color: Colors.white, fontWeight: FontWeight.w600),),
                           ],
                         ),
                       ),
@@ -421,7 +427,7 @@ class _FruitsLayoutState extends State<FruitsLayout> {
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: <Widget>[
-                            Text("Tomato", style: TextStyle(fontFamily: 'Comic', fontSize: 23.0, color: Colors.white),),
+                            Text("Tomato", style: TextStyle(fontFamily: 'Comic', fontSize: 33.0, color: Colors.white, fontWeight: FontWeight.w600),),
                           ],
                         ),
                       ),

@@ -77,7 +77,7 @@ class _MyAppState extends State<MyApp> {
         appBar: AppBar(
           elevation: 0.0,
           backgroundColor: Colors.orange,
-          title: Text("TeachMe", style: TextStyle(fontFamily: 'Comic'),),
+          title: Text("TeachApp", style: TextStyle(fontFamily: 'Comic'),),
           centerTitle: true,
           actions: <Widget>[
               PopupMenuButton<String>(
@@ -109,8 +109,8 @@ class _MyAppState extends State<MyApp> {
             });
           },
           items: [
-            BottomNavigationBarItem(icon: Image.asset('assets/home.png', scale: 2.2,), title: Text("Home", style: TextStyle(fontFamily: 'comic'),)),
-            BottomNavigationBarItem(icon: Image.asset('assets/books_bottom.png', scale: 2.2,), title: Text("Swahili", style: TextStyle(fontFamily: 'comic'))),
+            BottomNavigationBarItem(icon: Image.asset('assets/home.png', scale: 2.2,), title: Text("English", style: TextStyle(fontFamily: 'comic'),)),
+            BottomNavigationBarItem(icon: Image.asset('assets/books_bottom.png', scale: 2.2,), title: Text("Kiswahili", style: TextStyle(fontFamily: 'comic'))),
             BottomNavigationBarItem(icon: Image.asset('assets/music.png', scale: 2.2,), title: Text("Song", style: TextStyle(fontFamily: 'comic'),)),
           ]
         ),

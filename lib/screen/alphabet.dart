@@ -13,6 +13,12 @@ AudioPlayer audioPlayer = AudioPlayer(mode: PlayerMode.LOW_LATENCY);
 
 class _AlphabetLayoutState extends State<AlphabetLayout> {
 
+
+
+  List<String> alphabetical = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h',
+    'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v',
+    'w', 'x', 'y', 'z',];
+
   AudioPlayer advancePlayer;
   AudioCache audioCache;
   //initiate the Playing
@@ -78,17 +84,196 @@ class _AlphabetLayoutState extends State<AlphabetLayout> {
             children: <Widget>[
               CarouselSlider(
 
-                autoPlay: false,
-                autoPlayAnimationDuration: Duration(seconds: 1),
+                autoPlay: true,
+                autoPlayAnimationDuration: Duration(milliseconds: 800),
                 height: 400.0,
                 initialPage: 0,
                 reverse: false,
                 enlargeCenterPage: true,
                 scrollDirection: Axis.horizontal,
                 onPageChanged: (index){
-                  setState(() {
-                    main = index;
-                  });
+                  if(alphabetical[index] == 'a'){
+                    if( audioCache.play('a.mp3') ==  audioCache.play('a.mp3')){
+                      audioCache.play('a.mp3');
+                    } else {
+                      advancePlayer.stop();
+                    }
+                  }
+                  if(alphabetical[index] == 'b'){
+                    if( audioCache.play('b.mp3') ==  audioCache.play('b.mp3')){
+                  audioCache.play('b.mp3');
+                  } else {
+                      advancePlayer.stop();
+                    }
+                  }
+                  if(alphabetical[index] == 'c'){
+                    if( audioCache.play('c.mp3') ==  audioCache.play('c.mp3')){
+                      audioCache.play('c.mp3');
+                    } else {
+                      advancePlayer.stop();
+                    }
+                  }
+                  if(alphabetical[index] == 'd'){
+                    if( audioCache.play('d.mp3') ==  audioCache.play('d.mp3')){
+                      audioCache.play('d.mp3');
+                    } else {
+                      advancePlayer.stop();
+                    }
+                  }
+                  if(alphabetical[index] == 'e'){
+                    if( audioCache.play('e.mp3') ==  audioCache.play('e.mp3')){
+                      audioCache.play('e.mp3');
+                    } else {
+                      advancePlayer.stop();
+                    }
+                  }
+                  if(alphabetical[index] == 'f'){
+                    if( audioCache.play('f.mp3') ==  audioCache.play('f.mp3')){
+                      audioCache.play('f.mp3');
+                    } else {
+                      advancePlayer.stop();
+                    }
+                  }
+                  if(alphabetical[index] == 'g'){
+                    if( audioCache.play('g.mp3') ==  audioCache.play('g.mp3')){
+                      audioCache.play('g.mp3');
+                    } else {
+                      advancePlayer.stop();
+                    }
+                  }
+                  if(alphabetical[index] == 'h'){
+                    if( audioCache.play('h.mp3') ==  audioCache.play('h.mp3')){
+                      audioCache.play('h.mp3');
+                    } else {
+                      advancePlayer.stop();
+                    }
+                  }
+                  if(alphabetical[index] == 'i'){
+                    if( audioCache.play('i.mp3') ==  audioCache.play('i.mp3')){
+                      audioCache.play('i.mp3');
+                    } else {
+                      advancePlayer.stop();
+                    }
+                  }
+                  if(alphabetical[index] == 'j'){
+                    if( audioCache.play('j.mp3') ==  audioCache.play('j.mp3')){
+                      audioCache.play('j.mp3');
+                    } else {
+                      advancePlayer.stop();
+                    }
+                  }
+                  if(alphabetical[index] == 'k'){
+                    if( audioCache.play('k.mp3') ==  audioCache.play('k.mp3')){
+                      audioCache.play('k.mp3');
+                    } else {
+                      advancePlayer.stop();
+                    }
+                  }
+                  if(alphabetical[index] == 'l'){
+                    if( audioCache.play('l.mp3') ==  audioCache.play('l.mp3')){
+                      audioCache.play('l.mp3');
+                    } else {
+                      advancePlayer.stop();
+                    }
+                  }
+                  if(alphabetical[index] == 'm'){
+                    if( audioCache.play('m.mp3') ==  audioCache.play('m.mp3')){
+                      audioCache.play('m.mp3');
+                    } else {
+                      advancePlayer.stop();
+                    }
+                  }
+                  if(alphabetical[index] == 'n'){
+                    if( audioCache.play('n.mp3') ==  audioCache.play('n.mp3')){
+                      audioCache.play('n.mp3');
+                    } else {
+                      advancePlayer.stop();
+                    }
+                  }
+                  if(alphabetical[index] == 'o'){
+                    if( audioCache.play('o.mp3') ==  audioCache.play('o.mp3')){
+                      audioCache.play('o.mp3');
+                    } else {
+                      advancePlayer.stop();
+                    }
+                  }
+                  if(alphabetical[index] == 'p'){
+                    if( audioCache.play('p.mp3') ==  audioCache.play('p.mp3')){
+                      audioCache.play('p.mp3');
+                    } else {
+                      advancePlayer.stop();
+                    }
+                  }
+                  if(alphabetical[index] == 'q'){
+                    if( audioCache.play('q.mp3') ==  audioCache.play('q.mp3')){
+                      audioCache.play('q.mp3');
+                    } else {
+                      advancePlayer.stop();
+                    }
+                  }
+                  if(alphabetical[index] == 'r'){
+                    if( audioCache.play('r.mp3') ==  audioCache.play('r.mp3')){
+                      audioCache.play('r.mp3');
+                    } else {
+                      advancePlayer.stop();
+                    }
+                  }
+                  if(alphabetical[index] == 's'){
+                    if( audioCache.play('s.mp3') ==  audioCache.play('s.mp3')){
+                      audioCache.play('s.mp3');
+                    } else {
+                      advancePlayer.stop();
+                    }
+                  }
+                  if(alphabetical[index] == 't'){
+                    if( audioCache.play('t.mp3') ==  audioCache.play('t.mp3')){
+                      audioCache.play('t.mp3');
+                    } else {
+                      advancePlayer.stop();
+                    }
+                  }
+                  if(alphabetical[index] == 'u'){
+                    if( audioCache.play('u.mp3') ==  audioCache.play('u.mp3')){
+                      audioCache.play('u.mp3');
+                    } else {
+                      advancePlayer.stop();
+                    }
+                  }
+                  if(alphabetical[index] == 'v'){
+                    if( audioCache.play('v.mp3') ==  audioCache.play('v.mp3')){
+                      audioCache.play('v.mp3');
+                    } else {
+                      advancePlayer.stop();
+                    }
+                  }
+                  if(alphabetical[index] == 'w'){
+                    if( audioCache.play('w.mp3') ==  audioCache.play('w.mp3')){
+                      audioCache.play('w.mp3');
+                    } else {
+                      advancePlayer.stop();
+                    }
+                  }
+                  if(alphabetical[index] == 'x'){
+                    if( audioCache.play('x.mp3') ==  audioCache.play('x.mp3')){
+                      audioCache.play('x.mp3');
+                    } else {
+                      advancePlayer.stop();
+                    }
+                  }
+                  if(alphabetical[index] == 'y'){
+                    if( audioCache.play('y.mp3') ==  audioCache.play('y.mp3')){
+                      audioCache.play('y.mp3');
+                    } else {
+                      advancePlayer.stop();
+                    }
+                  }
+                  if(alphabetical[index] == 'z'){
+                    if( audioCache.play('z.mp3') ==  audioCache.play('z.mp3')){
+                      audioCache.play('z.mp3');
+                    } else {
+                      advancePlayer.stop();
+                    }
+                  }
                 },
                 items: <Widget>[
                   Padding(
@@ -112,9 +297,6 @@ class _AlphabetLayoutState extends State<AlphabetLayout> {
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: <Widget>[
                           GestureDetector(
-                            onTap: (){
-                              audioCache.play('a.mp3');
-                            },
                             child: Container(
                               height: 200.0,
                               width: 200.0,
@@ -178,9 +360,6 @@ class _AlphabetLayoutState extends State<AlphabetLayout> {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: <Widget>[
                 GestureDetector(
-                  onTap: (){
-                    audioCache.play('b.mp3');
-                  },
                   child: Container(
                     height: 200.0,
                     width: 200.0,
@@ -244,9 +423,6 @@ class _AlphabetLayoutState extends State<AlphabetLayout> {
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: <Widget>[
                           GestureDetector(
-                            onTap: (){
-                              audioCache.play('c.mp3');
-                            },
                             child: Container(
                               height: 200.0,
                               width: 200.0,
@@ -310,9 +486,6 @@ class _AlphabetLayoutState extends State<AlphabetLayout> {
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: <Widget>[
                           GestureDetector(
-                            onTap: (){
-                              audioCache.play('d.mp3');
-                            },
                             child: Container(
                               height: 200.0,
                               width: 200.0,
@@ -376,9 +549,6 @@ class _AlphabetLayoutState extends State<AlphabetLayout> {
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: <Widget>[
                           GestureDetector(
-                            onTap: (){
-                              audioCache.play('e.mp3');
-                            },
                             child: Container(
                               height: 200.0,
                               width: 200.0,
@@ -442,9 +612,6 @@ class _AlphabetLayoutState extends State<AlphabetLayout> {
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: <Widget>[
                           GestureDetector(
-                            onTap: (){
-                              audioCache.play('f.mp3');
-                            },
                             child: Container(
                               height: 200.0,
                               width: 200.0,
