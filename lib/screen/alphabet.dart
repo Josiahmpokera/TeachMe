@@ -42,8 +42,6 @@ class _AlphabetLayoutState extends State<AlphabetLayout> {
 
   String localFilePath;
 
-
-
   int main = 0;
 
   @override
@@ -83,9 +81,8 @@ class _AlphabetLayoutState extends State<AlphabetLayout> {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
               CarouselSlider(
-
                 autoPlay: true,
-                autoPlayAnimationDuration: Duration(milliseconds: 800),
+               autoPlayInterval: Duration(milliseconds: 2700),
                 height: 400.0,
                 initialPage: 0,
                 reverse: false,

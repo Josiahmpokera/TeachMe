@@ -77,7 +77,7 @@ class _MyAppState extends State<MyApp> {
         appBar: AppBar(
           elevation: 0.0,
           backgroundColor: Colors.orange,
-          title: Text("TeachApp", style: TextStyle(fontFamily: 'Comic'),),
+          title: Text("TeachApp", style: TextStyle(fontFamily: 'Comic', fontWeight: FontWeight.w800),),
           centerTitle: true,
           actions: <Widget>[
               PopupMenuButton<String>(
@@ -130,9 +130,8 @@ class _MyAppState extends State<MyApp> {
     }
     if(choice == manu.Exit){
       print('Subscribe');
-      advancePlayer.stop();
+     // advancePlayer.stop();
       SystemNavigator.pop();
     }
   }
-
 }

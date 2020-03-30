@@ -4,6 +4,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:audioplayers/audioplayers.dart';
 import 'package:audioplayers/audio_cache.dart';
+import 'package:flutter_one/swahili_screen/silabi.dart';
 
 class SongLayout extends StatefulWidget {
   @override
@@ -31,7 +32,6 @@ class _SongLayoutState extends State<SongLayout> {
     advancePlayer = AudioPlayer();
     audioCache  = AudioCache(fixedPlayer: advancePlayer);
 
-
     advancePlayer.durationHandler = (d) => setState((){
 
     });
@@ -40,12 +40,18 @@ class _SongLayoutState extends State<SongLayout> {
   String localFilePath;
 
 
+  var mainColor = Colors.blueGrey;
+  var secondColor = Colors.blueGrey;
+  var thirdColor = Colors.blueGrey;
+
 
   @override
   Widget build(BuildContext context) {
 
+
+
     final screenWidth = MediaQuery.of(context).size.width / 2;
-    final wholeWidth = MediaQuery.of(context).size.width;
+    var smallContainer = MediaQuery.of(context).size.height / 7;
 
     return Container(
       decoration: BoxDecoration(
@@ -54,189 +60,130 @@ class _SongLayoutState extends State<SongLayout> {
           fit: BoxFit.cover,
         ),
       ),
-      child: ListView(
+      child: Column(
         children: <Widget>[
           Padding(
-            padding: EdgeInsets.all(10.0),
-            child: Row(
-              children: <Widget>[
-                Text("English Songs", style: TextStyle(fontFamily: 'Comic', fontSize: 24.0, color: Colors.white, fontWeight: FontWeight.w600),),
-              ],
-            ),
-          ),
-          Container(
-            height: 80,
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(10),
-              color: Colors.white,
-              boxShadow: [
-                BoxShadow(
-                  offset: Offset(2, 2),
-                  color: Colors.black26,
-                  blurRadius: 10.0,
-                ),
-              ],
-            ),
-            margin: EdgeInsets.all(12),
+            padding: const EdgeInsets.all(8.0),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: <Widget>[
-                Container(
-                  width: 45,
-                  height: 45,
-                  child: Image.asset('assets/zebra.png'),
-                ),
-                Text("Animal Song", style: TextStyle(fontSize: 28,color: Colors.black, fontFamily: 'comic', fontWeight: FontWeight.w600),
-                ),
-                Container(
-                  child: Row(
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: <Widget>[
-                      IconButton(icon: Icon(Icons.play_arrow, color: Colors.blue, size: 45,),
-                      onPressed: (){
-                        //DO something here
-                        if(audioCache.play('animal.mp3') == audioCache.play('animal.mp3')){
-                          audioCache.play('animal.mp3');
-                        } else{
-                          advancePlayer.stop();
-                        }
-                      },
+                GestureDetector(
+                  onTap: (){
+                    setState(() {
+                      if(mainColor == Colors.blueGrey){
+                        mainColor = Colors.blue;
+                        secondColor = Colors.blueGrey;
+                        thirdColor = Colors.blueGrey;
+                      }
+                    });
+                  },
+                  child: Container(
+                    height: 60,
+                    width: 60,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(50),
+                      color: mainColor,
+                    ),
+                    child: Container(
+                      margin: EdgeInsets.all(14),
+                      height: 50,
+                      width: 50,
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(50),
+                          color: Colors.white
                       ),
-                      IconButton(icon: Icon(Icons.pause, color: Colors.pink, size: 45,),
-                      onPressed: (){
-                        //Do something here
-                        audioCache.clearCache();
-                        advancePlayer.stop();
-                      },
-                      ),
-                    ],
+                    ),
                   ),
                 ),
+                GestureDetector(
+                  onTap: (){
+                    setState(() {
+                      if(secondColor == Colors.blueGrey){
+                        secondColor = Colors.blue;
+                        mainColor = Colors.blueGrey;
+                        thirdColor = Colors.blueGrey;
+                      }
+                    });
+                  },
+                  child: Container(
+                    height: 60,
+                    width: 60,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(50),
+                      color: secondColor,
+                    ),
+                    child: Container(
+                      margin: EdgeInsets.all(18),
+                      height: 50,
+                      width: 50,
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(50),
+                          color: Colors.white
+                      ),
+                    ),
+                  ),
+                ),
+                GestureDetector(
+                  onTap: (){
+                    setState(() {
+                      if(thirdColor == Colors.blueGrey){
+                        thirdColor = Colors.blue;
+                        mainColor = Colors.blueGrey;
+                        secondColor = Colors.blueGrey;
+                      }
+                    });
+                  },
+                  child: Container(
+                    height: 60,
+                    width: 60,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(50),
+                      color: thirdColor,
+                    ),
+                    child: Container(
+                      margin: EdgeInsets.all(24),
+                      height: 50,
+                      width: 50,
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(50),
+                          color: Colors.white
+                      ),
+                    ),
+                  ),
+                ),
+                Container(
+                  height: 60,
+                  width: 60,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(50),
+                    color: Colors.red,
+                  ),
+                  child: IconButton(icon: Icon(Icons.delete, color: Colors.white,),),
+                )
               ],
             ),
           ),
-
-          Row(
-            children: <Widget>[
-              Container(
-                width: wholeWidth,
-                height: 140.0,
-                child: Row(
-                  children: <Widget>[
-                    Container(
-                      width: screenWidth,
-                      height: 130.0,
-                      child: Padding(
-                        padding: EdgeInsets.all(10.0),
-                        child: GestureDetector(
-                          onTap: (){
-                            //Do Something here
-                            if(audioCache.play('number.mp3') == audioCache.play('number.mp3')){
-                              audioCache.play('number.mp3');
-                            } else {
-                              advancePlayer.stop();
-                            }
-                          },
-                          child: Container(
-                            width: double.infinity,
-                            height: 90.0,
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.center,
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: <Widget>[
-                                IconButton(icon: Icon(Icons.play_circle_filled, color: Colors.amber, size: 57.0,),)
-                              ],
-                            ),
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(10.0),
-                              color: Colors.greenAccent,
-                              image: DecorationImage(
-                                image: AssetImage('assets/song/number.jpg'),
-                                fit: BoxFit.cover,
-                              ),
-                              boxShadow: [
-                                BoxShadow(
-                                  offset: Offset(2, 2),
-                                  color: Colors.black26,
-                                  blurRadius: 10.0,
-                                ),
-                              ],
-                            ),
-                          ),
-                        ),
-                      ),
-                    ),
-                    Container(
-                      width: screenWidth,
-                      height: 130.0,
-                      child: Padding(
-                        padding: EdgeInsets.all(10.0),
-                        child: GestureDetector(
-                          onTap: (){
-                            if(audioCache.play('kids.mp3') == audioCache.play('kids.mp3')){
-                              audioCache.play('kids.mp3');
-                            } else {
-                              advancePlayer.stop();
-                            }
-                          },
-                          child:  Container(
-                            width: double.infinity,
-                            height: 90.0,
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.center,
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: <Widget>[
-                                IconButton(icon: Icon(Icons.play_circle_filled, color: Colors.amber, size: 57.0,),)
-                              ],
-                            ),
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(10.0),
-                              color: Colors.yellow,
-                              image: DecorationImage(
-                                image: AssetImage('assets/song/john.jpg'),
-                                fit: BoxFit.cover,
-                              ),
-                              boxShadow: [
-                                BoxShadow(
-                                  offset: Offset(2, 2),
-                                  color: Colors.black26,
-                                  blurRadius: 10.0,
-                                ),
-                              ],
-                            ),
-                          ),
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ],
-          ),
-          SizedBox(
-            height: 10.0,
-          ),
           Container(
-            margin: EdgeInsets.symmetric(horizontal: 10.0),
-            color: Colors.white,
+            height: smallContainer * 4,
             width: double.infinity,
-            height: 01.0,
-          ),
-          SizedBox(height: 05.0,),
-          Padding(
-            padding: EdgeInsets.symmetric(horizontal: 10.0),
-            child: RaisedButton(
-              onPressed: (){
-                audioCache.clearCache();
-                advancePlayer.stop();
-              },
-              focusColor: Colors.amberAccent,
-              color: Colors.amber,
-              elevation: 13.0,
-              child: Text("Stop Audio", style: TextStyle(fontFamily: 'Comic', color: Colors.white, fontSize: 17.0),),
+            decoration: BoxDecoration(color: Colors.black, border: Border(left: BorderSide(color: Colors.yellow, width: 10), right: BorderSide(color: Colors.yellow, width: 10), top: BorderSide(color: Colors.yellow, width: 10), bottom: BorderSide(color: Colors.yellow, width: 10),),
             ),
           ),
+         /*  Container(
+           child: Row(
+             children: <Widget>[
+               ListView.builder(
+                 scrollDirection: Axis.horizontal,
+                 itemCount: silabi.length,
+                 itemBuilder: (BuildContext context, int index){
+                   return Container(
+                     child: Text(silabi[index]),
+                   );
+                 },
+               ),
+             ],
+           ),
+          ), */
         ],
       ),
     );

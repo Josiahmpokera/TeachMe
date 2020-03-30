@@ -162,9 +162,7 @@ flutter:
     - assets/x.mp3
     - assets/y.mp3
     - assets/z.mp3
-    - assets/animal.mp3
     - assets/number.mp3
-    - assets/kids.mp3
     - assets/new-animal/snake.png
     - assets/fruits/fruits1.png
     - assets/fruits/fruits2.png
@@ -210,9 +208,132 @@ flutter:
     - assets/panda.mp3
     - assets/snake.mp3
     - assets/zebra.mp3
+    - assets/irabu_a.mp3
+    - assets/irabu_e.mp3
+    - assets/irabu_i.mp3
+    - assets/irabu_o.mp3
+    - assets/irabu_u.mp3
     - assets/clothers_folder/dress.png
     - assets/clothers_folder/shirt.png
     - assets/clothers_folder/shorts.png
+    - assets/swahili_assets/finger.png
+    - assets/swahili_assets/finger_new.png
+    - assets/irabu_a.mp3
+    - assets/irabu_e.mp3
+    - assets/irabu_i.mp3
+    - assets/irabu_o.mp3
+    - assets/irabu_u.mp3
+    - assets/ba.mp3
+    - assets/be.mp3
+    - assets/bi.mp3
+    - assets/bo.mp3
+    - assets/bu.mp3
+    - assets/cha.mp3
+    - assets/che.mp3
+    - assets/chi.mp3
+    - assets/cho.mp3
+    - assets/chu.mp3
+    - assets/da.mp3
+    - assets/de.mp3
+    - assets/di.mp3
+    - assets/do.mp3
+    - assets/du.mp3
+    - assets/fa.mp3
+    - assets/fe.mp3
+    - assets/fi.mp3
+    - assets/fo.mp3
+    - assets/fu.mp3
+    - assets/ga.mp3
+    - assets/ge.mp3
+    - assets/gi.mp3
+    - assets/go.mp3
+    - assets/gu.mp3
+    - assets/ha.mp3
+    - assets/he.mp3
+    - assets/hi.mp3
+    - assets/ho.mp3
+    - assets/hu.mp3
+    - assets/ja.mp3
+    - assets/je.mp3
+    - assets/ji.mp3
+    - assets/jo.mp3
+    - assets/ju.mp3
+    - assets/ka.mp3
+    - assets/ke.mp3
+    - assets/ki.mp3
+    - assets/ko.mp3
+    - assets/ku.mp3
+    - assets/la.mp3
+    - assets/le.mp3
+    - assets/li.mp3
+    - assets/lo.mp3
+    - assets/lu.mp3
+    - assets/ma.mp3
+    - assets/me.mp3
+    - assets/mi.mp3
+    - assets/mo.mp3
+    - assets/mu.mp3
+    - assets/na.mp3
+    - assets/ne.mp3
+    - assets/ni.mp3
+    - assets/no.mp3
+    - assets/nu.mp3
+    - assets/pa.mp3
+    - assets/pe.mp3
+    - assets/pi.mp3
+    - assets/po.mp3
+    - assets/pu.mp3
+    - assets/ra.mp3
+    - assets/re.mp3
+    - assets/ri.mp3
+    - assets/ro.mp3
+    - assets/ru.mp3
+    - assets/sa.mp3
+    - assets/se.mp3
+    - assets/si.mp3
+    - assets/so.mp3
+    - assets/su.mp3
+    - assets/ta.mp3
+    - assets/te.mp3
+    - assets/ti.mp3
+    - assets/to.mp3
+    - assets/tu.mp3
+    - assets/va.mp3
+    - assets/ve.mp3
+    - assets/vi.mp3
+    - assets/vo.mp3
+    - assets/vu.mp3
+    - assets/wa.mp3
+    - assets/we.mp3
+    - assets/wi.mp3
+    - assets/wo.mp3
+    - assets/wu.mp3
+    - assets/ya.mp3
+    - assets/ye.mp3
+    - assets/yo.mp3
+    - assets/yu.mp3
+    - assets/za.mp3
+    - assets/ze.mp3
+    - assets/zi.mp3
+    - assets/zo.mp3
+    - assets/zu.mp3
+    - assets/maneno_babu.mp3
+    - assets/maneno_chai.mp3
+    - assets/maneno_dada.mp3
+    - assets/maneno_fagio.mp3
+    - assets/maneno_gari.mp3
+    - assets/maneno_gauni.mp3
+    - assets/maneno_hoho.mp3
+    - assets/maneno_kuku.mp3
+    - assets/maneno_lala.mp3
+    - assets/maneno_mama.mp3
+    - assets/maneno_nazi.mp3
+    - assets/maneno_ruka.mp3
+    - assets/maneno_saa.mp3
+    - assets/maneno_taa.mp3
+    - assets/maneno_viatu.mp3
+    - assets/maneno_yai.mp3
+    - assets/maneno_zeze.mp3
 
 
 

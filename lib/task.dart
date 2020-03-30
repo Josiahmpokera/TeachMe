@@ -54,12 +54,31 @@ class _MainContainerState extends State<MainContainer> with SingleTickerProvider
 
                       Navigator.push(context, MaterialPageRoute(builder: (context) => IrabuScreen()) );
                     },
+                    // ignore: non_constant_identifier_names
+                    onTapUp: (TapUpDetails){
+                      setState(() {
+                        colorsIrabu = Colors.white;
+                      });
+                    },
+                    // ignore: non_constant_identifier_names
+                    onTapDown: (TapDownDetails){
+                      setState(() {
+                        colorsIrabu = Colors.blue[300];
+                      });
+                    },
                     child: Container(
                       width: widthCOntainer,
                       margin: EdgeInsets.symmetric(horizontal: 14, vertical: 10),
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(12),
-                        color: Colors.white,
+                        color: colorsIrabu,
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.black26,
+                            offset: Offset(1, 2),
+                            blurRadius: 8,
+                          ),
+                        ]
                       ),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -93,12 +112,31 @@ class _MainContainerState extends State<MainContainer> with SingleTickerProvider
                     onTap: (){
                       Navigator.push(context, MaterialPageRoute(builder: (context) => ManenoScreen()));
                     },
+                    // ignore: non_constant_identifier_names
+                    onTapUp: (TapUpDetails){
+                      setState(() {
+                        colorManeno = Colors.white;
+                      });
+                    },
+                    // ignore: non_constant_identifier_names
+                    onTapDown: (TapDownDetails){
+                      setState(() {
+                        colorManeno = Colors.blue[300];
+                      });
+                    },
                     child: Container(
                       width: widthCOntainer,
                       margin: EdgeInsets.symmetric(horizontal: 14, vertical: 10),
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(12),
-                        color: Colors.white,
+                        color: colorManeno,
+                          boxShadow: [
+                            BoxShadow(
+                              color: Colors.black26,
+                              offset: Offset(1, 2),
+                              blurRadius: 8,
+                            ),
+                          ]
                       ),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -132,12 +170,31 @@ class _MainContainerState extends State<MainContainer> with SingleTickerProvider
                       print("Silabi Container Clicked");
                       Navigator.push(context, MaterialPageRoute(builder: (context) => SilabiScreen()));
                     },
+                      // ignore: non_constant_identifier_names
+                      onTapUp: (TapUpDetails){
+                        setState(() {
+                          colorSIlabi = Colors.white;
+                        });
+                      },
+                      // ignore: non_constant_identifier_names
+                      onTapDown: (TapDownDetails){
+                        setState(() {
+                          colorSIlabi = Colors.blue[300];
+                        });
+                      },
                     child: Container(
                       width: widthCOntainer,
                       margin: EdgeInsets.symmetric(horizontal: 14, vertical: 10),
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(12),
-                        color: Colors.white,
+                        color: colorSIlabi,
+                          boxShadow: [
+                            BoxShadow(
+                              color: Colors.black26,
+                              offset: Offset(1, 2),
+                              blurRadius: 8,
+                            ),
+                          ]
                       ),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -171,12 +228,31 @@ class _MainContainerState extends State<MainContainer> with SingleTickerProvider
                       print("Silabi Maneno Clicked");
                       Navigator.push(context, MaterialPageRoute(builder: (context) => SilabiManeno()));
                     },
+                    // ignore: non_constant_identifier_names
+                    onTapUp: (TapUpDetails){
+                      setState(() {
+                        colorManenoSilabi = Colors.white;
+                      });
+                    },
+                    // ignore: non_constant_identifier_names
+                    onTapDown: (TapDownDetails){
+                      setState(() {
+                        colorManenoSilabi = Colors.blue[300];
+                      });
+                    },
                     child: Container(
                       width: widthCOntainer,
                       margin: EdgeInsets.symmetric(horizontal: 14, vertical: 10),
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(12),
-                        color: Colors.white,
+                        color: colorManenoSilabi,
+                          boxShadow: [
+                            BoxShadow(
+                              color: Colors.black26,
+                              offset: Offset(1, 2),
+                              blurRadius: 8,
+                            ),
+                          ]
                       ),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceAround,

@@ -285,7 +285,7 @@ class _AnimalLayoutState extends State<AnimalLayout> {
                             width: 200.0,
                             child: Image.asset('assets/new-animal/giraffe.png'),
                           ),
-                          Text("Monkey", style: TextStyle(fontSize: 25.0, fontFamily: 'Comic', fontWeight: FontWeight.bold),),
+                          Text("Giraffe", style: TextStyle(fontSize: 25.0, fontFamily: 'Comic', fontWeight: FontWeight.bold),),
                         ],
                       ),
                     ),
