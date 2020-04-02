@@ -375,7 +375,7 @@ class _AnimalLayoutState extends State<AnimalLayout> {
                             width: 200.0,
                             child: Image.asset('assets/new-animal/elephant.png'),
                           ),
-                          Text("Snake", style: TextStyle(fontSize: 25.0, fontFamily: 'Comic', fontWeight: FontWeight.bold),),
+                          Text("Elephant", style: TextStyle(fontSize: 25.0, fontFamily: 'Comic', fontWeight: FontWeight.bold),),
                         ],
                       ),
                     ),

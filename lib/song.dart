@@ -13,6 +13,8 @@ class SongLayout extends StatefulWidget {
 
 class _SongLayoutState extends State<SongLayout> {
 
+  List<Offset> _points = <Offset>[];
+
   //Duration here
   Duration _duration = Duration();
   Duration _position = Duration();
@@ -53,139 +55,66 @@ class _SongLayoutState extends State<SongLayout> {
     final screenWidth = MediaQuery.of(context).size.width / 2;
     var smallContainer = MediaQuery.of(context).size.height / 7;
 
-    return Container(
-      decoration: BoxDecoration(
-        image: DecorationImage(
-          image: AssetImage('assets/background.png'),
-          fit: BoxFit.cover,
+    return Scaffold(
+      body: new Container(
+        height: double.infinity,
+        width: double.infinity,
+        child: new GestureDetector(
+          onPanUpdate: (DragUpdateDetails details){
+            setState(() {
+              RenderBox object = context.findRenderObject();
+              Offset _localPosition = object.globalToLocal(details.globalPosition);
+              _points = new List.from(_points)..add(_localPosition);
+            });
+          },
+          onPanEnd: (DragEndDetails details) => _points.add(null),
+          child: new CustomPaint(
+            painter: new Signature(points: _points),
+            size: Size.infinite,),
+        ),
+        decoration: BoxDecoration(
+          color: Colors.black,
+          border: Border(left: BorderSide(color: Colors.yellow, width: 10),
+            right: BorderSide(color: Colors.yellow, width: 10),
+            top: BorderSide(color: Colors.yellow, width: 10),
+            bottom: BorderSide(color: Colors.yellow, width: 10),),
         ),
       ),
-      child: Column(
-        children: <Widget>[
-          Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
-              children: <Widget>[
-                GestureDetector(
-                  onTap: (){
-                    setState(() {
-                      if(mainColor == Colors.blueGrey){
-                        mainColor = Colors.blue;
-                        secondColor = Colors.blueGrey;
-                        thirdColor = Colors.blueGrey;
-                      }
-                    });
-                  },
-                  child: Container(
-                    height: 60,
-                    width: 60,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(50),
-                      color: mainColor,
-                    ),
-                    child: Container(
-                      margin: EdgeInsets.all(14),
-                      height: 50,
-                      width: 50,
-                      decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(50),
-                          color: Colors.white
-                      ),
-                    ),
-                  ),
-                ),
-                GestureDetector(
-                  onTap: (){
-                    setState(() {
-                      if(secondColor == Colors.blueGrey){
-                        secondColor = Colors.blue;
-                        mainColor = Colors.blueGrey;
-                        thirdColor = Colors.blueGrey;
-                      }
-                    });
-                  },
-                  child: Container(
-                    height: 60,
-                    width: 60,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(50),
-                      color: secondColor,
-                    ),
-                    child: Container(
-                      margin: EdgeInsets.all(18),
-                      height: 50,
-                      width: 50,
-                      decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(50),
-                          color: Colors.white
-                      ),
-                    ),
-                  ),
-                ),
-                GestureDetector(
-                  onTap: (){
-                    setState(() {
-                      if(thirdColor == Colors.blueGrey){
-                        thirdColor = Colors.blue;
-                        mainColor = Colors.blueGrey;
-                        secondColor = Colors.blueGrey;
-                      }
-                    });
-                  },
-                  child: Container(
-                    height: 60,
-                    width: 60,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(50),
-                      color: thirdColor,
-                    ),
-                    child: Container(
-                      margin: EdgeInsets.all(24),
-                      height: 50,
-                      width: 50,
-                      decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(50),
-                          color: Colors.white
-                      ),
-                    ),
-                  ),
-                ),
-                Container(
-                  height: 60,
-                  width: 60,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(50),
-                    color: Colors.red,
-                  ),
-                  child: IconButton(icon: Icon(Icons.delete, color: Colors.white,),),
-                )
-              ],
-            ),
-          ),
-          Container(
-            height: smallContainer * 4,
-            width: double.infinity,
-            decoration: BoxDecoration(color: Colors.black, border: Border(left: BorderSide(color: Colors.yellow, width: 10), right: BorderSide(color: Colors.yellow, width: 10), top: BorderSide(color: Colors.yellow, width: 10), bottom: BorderSide(color: Colors.yellow, width: 10),),
-            ),
-          ),
-         /*  Container(
-           child: Row(
-             children: <Widget>[
-               ListView.builder(
-                 scrollDirection: Axis.horizontal,
-                 itemCount: silabi.length,
-                 itemBuilder: (BuildContext context, int index){
-                   return Container(
-                     child: Text(silabi[index]),
-                   );
-                 },
-               ),
-             ],
-           ),
-          ), */
-        ],
+      floatingActionButton: new FloatingActionButton(
+        onPressed: () => _points.clear(),
+        backgroundColor: Colors.white,
+        child: Icon(Icons.delete, color: Colors.red,),
       ),
     );
   }
 }
+
+class Signature extends CustomPainter{
+
+  List<Offset> points;
+
+  Signature({this.points});
+
+
+  @override
+  void paint(Canvas canvas, Size size) {
+
+    Paint paint = new Paint()
+    ..color = Colors.white
+    ..strokeCap = StrokeCap.round
+    ..strokeWidth = 15;
+
+    for(int i = 0; i<points.length-1; i++){
+      if(points[i] !=null && points[i+1] != null){
+        canvas.drawLine(points[i], points[i+1], paint);
+      }
+    }
+
+  }
+
+  @override
+  bool shouldRepaint(Signature oldDelegate) => oldDelegate.points != points;
+
+}
+
+

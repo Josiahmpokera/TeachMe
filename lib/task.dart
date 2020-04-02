@@ -1,4 +1,5 @@
 import 'package:flutter/animation.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_one/swahili_screen/silabi_screen.dart';
 import 'task-form.dart';
@@ -40,7 +41,7 @@ class _MainContainerState extends State<MainContainer> with SingleTickerProvider
       decoration: BoxDecoration(
         image: DecorationImage(
           image: AssetImage("assets/background.png"),
-          fit: BoxFit.cover,
+          fit: BoxFit.fitWidth,
         )
       ),
       child: CustomScrollView(
@@ -49,119 +50,112 @@ class _MainContainerState extends State<MainContainer> with SingleTickerProvider
             delegate: SliverChildListDelegate([
               Column(
                 children: <Widget>[
-                  GestureDetector(
-                    onTap: (){
+                  Container(
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: <Widget>[
+                        GestureDetector(
+                          onTap: (){
 
-                      Navigator.push(context, MaterialPageRoute(builder: (context) => IrabuScreen()) );
-                    },
-                    // ignore: non_constant_identifier_names
-                    onTapUp: (TapUpDetails){
-                      setState(() {
-                        colorsIrabu = Colors.white;
-                      });
-                    },
-                    // ignore: non_constant_identifier_names
-                    onTapDown: (TapDownDetails){
-                      setState(() {
-                        colorsIrabu = Colors.blue[300];
-                      });
-                    },
-                    child: Container(
-                      width: widthCOntainer,
-                      margin: EdgeInsets.symmetric(horizontal: 14, vertical: 10),
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(12),
-                        color: colorsIrabu,
-                        boxShadow: [
-                          BoxShadow(
-                            color: Colors.black26,
-                            offset: Offset(1, 2),
-                            blurRadius: 8,
-                          ),
-                        ]
-                      ),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceAround,
-                        children: <Widget>[
-                          Container(
-                            height: 80,
-                            width: 80,
-                            child: Image.asset('assets/aeiou.png', height: 70,),
-                          ),
-                          Container(
-                            width: containerWidth,
-                            child: Column(
+                            Navigator.push(context, MaterialPageRoute(builder: (context) => IrabuScreen()) );
+                          },
+                          // ignore: non_constant_identifier_names
+                          onTapUp: (TapUpDetails){
+                            setState(() {
+                              colorsIrabu = Colors.white;
+                            });
+                          },
+                          // ignore: non_constant_identifier_names
+                          onTapDown: (TapDownDetails){
+                            setState(() {
+                              colorsIrabu = Colors.blue[300];
+                            });
+                          },
+                          child: Container(
+                            width: widthCOntainer / 2.4,
+                            height: 90,
+                            margin: EdgeInsets.symmetric(horizontal: 14, vertical: 10),
+                            decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(12),
+                                color: colorsIrabu,
+                                boxShadow: [
+                                  BoxShadow(
+                                    color: Colors.black26,
+                                    offset: Offset(1, 10),
+                                    blurRadius: 9,
+                                  ),
+                                ],
+                            ),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceAround,
                               children: <Widget>[
-                                Text("Irabu", style: TextStyle(color: Colors.brown, fontFamily: 'Comic', fontSize: 30, fontWeight: FontWeight.bold),),
+                                Container(
+                                  width: containerWidth,
+                                  child: Column(
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: <Widget>[
+                                      Text("Irabu", style: TextStyle(color: Colors.white, fontFamily: 'Comic', fontSize: 30, fontWeight: FontWeight.bold),),
+                                      Text("Jifunze Irabu", style: TextStyle(fontFamily: 'comic', color: Colors.grey[200]),),
+                                    ],
+                                  ),
+                                ),
                               ],
                             ),
                           ),
-                          Container(
-                            width: 80,
-                            child: IconButton(
-                              icon: Icon(Icons.sentiment_very_satisfied, color: Colors.greenAccent,),
+                        ),
+
+                        //Another COntainer
+                        GestureDetector(
+                          onTap: (){
+                            Navigator.push(context, MaterialPageRoute(builder: (context) => ManenoScreen()));
+                          },
+                          // ignore: non_constant_identifier_names
+                          onTapUp: (TapUpDetails){
+                            setState(() {
+                              colorManeno = Colors.white;
+                            });
+                          },
+                          // ignore: non_constant_identifier_names
+                          onTapDown: (TapDownDetails){
+                            setState(() {
+                              colorManeno = Colors.blue[300];
+                            });
+                          },
+                          child: Container(
+                            width: widthCOntainer / 2.4,
+                            height: 90,
+                            margin: EdgeInsets.symmetric(horizontal: 14, vertical: 10),
+                            decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(12),
+                                color: colorManeno,
+                                boxShadow: [
+                                  BoxShadow(
+                                    color: Colors.black26,
+                                    offset: Offset(1, 10),
+                                    blurRadius: 9,
+                                  ),
+                                ]
+                            ),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceAround,
+                              children: <Widget>[
+                                Column(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: <Widget>[
+                                    Text("Maneno", style: TextStyle(color: Colors.white, fontFamily: 'Comic', fontSize: 30, fontWeight: FontWeight.bold),),
+                                    Text("maneno ya Irabu", style: TextStyle(fontFamily: 'comic', color: Colors.grey[200],),),
+                                  ],
+                                ),
+                              ],
                             ),
                           ),
-                        ],
-                      ),
+                        ),
+                      ],
                     ),
                   ),
 
                   //AAnother Container
-                  GestureDetector(
-                    onTap: (){
-                      Navigator.push(context, MaterialPageRoute(builder: (context) => ManenoScreen()));
-                    },
-                    // ignore: non_constant_identifier_names
-                    onTapUp: (TapUpDetails){
-                      setState(() {
-                        colorManeno = Colors.white;
-                      });
-                    },
-                    // ignore: non_constant_identifier_names
-                    onTapDown: (TapDownDetails){
-                      setState(() {
-                        colorManeno = Colors.blue[300];
-                      });
-                    },
-                    child: Container(
-                      width: widthCOntainer,
-                      margin: EdgeInsets.symmetric(horizontal: 14, vertical: 10),
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(12),
-                        color: colorManeno,
-                          boxShadow: [
-                            BoxShadow(
-                              color: Colors.black26,
-                              offset: Offset(1, 2),
-                              blurRadius: 8,
-                            ),
-                          ]
-                      ),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceAround,
-                        children: <Widget>[
-                          Container(
-                            height: 80,
-                            width: 80,
-                            child: Image.asset('assets/aeiou.png'),
-                          ),
-                          Column(
-                            children: <Widget>[
-                              Text("Maneno", style: TextStyle(color: Colors.brown, fontFamily: 'Comic', fontSize: 30, fontWeight: FontWeight.bold),),
-                              Text("maneno ya Irabu", style: TextStyle(fontFamily: 'comic',),),
-                            ],
-                          ),
-                          Container(
-                            width: 80,
-                            child: IconButton(
-                              icon: Icon(Icons.sentiment_very_satisfied, color: Colors.yellow),
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ),
+
 
                   //Silabi Container Follows here
 
@@ -191,8 +185,8 @@ class _MainContainerState extends State<MainContainer> with SingleTickerProvider
                           boxShadow: [
                             BoxShadow(
                               color: Colors.black26,
-                              offset: Offset(1, 2),
-                              blurRadius: 8,
+                              offset: Offset(1, 12),
+                              blurRadius: 9,
                             ),
                           ]
                       ),
